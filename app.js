@@ -238,7 +238,7 @@
       li.appendChild(el('div', { class: 'campsite-night' }, 'N' + c.night));
       const right = el('div', {}, [
         el('p', { class: 'campsite-name' }, c.name),
-        el('p', { class: 'campsite-meta' }, c.price + ' · ' + c.booking)
+        el('p', { class: 'campsite-meta', html: linkifyDetail(c.price + ' · ' + c.booking) })
       ]);
       li.appendChild(right);
       ul.appendChild(li);

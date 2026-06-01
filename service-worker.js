@@ -3,7 +3,7 @@
    Cache-first per i file dell'app, network-first per itinerary.json
    ============================================================ */
 
-const VERSION = 'iceland-v1';
+const VERSION = 'iceland-v2';
 const STATIC_CACHE = 'iceland-static-' + VERSION;
 const DATA_CACHE = 'iceland-data-' + VERSION;
 
