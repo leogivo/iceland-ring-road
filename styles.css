@@ -360,21 +360,10 @@ main {
   color: var(--highlight);
 }
 
-.stop--walk {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 12px;
-  margin: 6px 0;
-}
-
-.stop--walk + .stop--walk {
-  border-top: 1px solid var(--border);
-  margin-top: 6px;
-}
-
-.stop--walk.stop--highlight {
+.stop--walk .stop-icon {
   border-color: var(--highlight);
+  background: var(--highlight-soft);
+  color: var(--highlight);
 }
 
 .stop--walk.stop--highlight::after {
