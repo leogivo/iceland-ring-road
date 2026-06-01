@@ -337,6 +337,18 @@ main {
   color: var(--highlight);
 }
 
+.stop--drive .stop-icon {
+  border-color: #257ca3;
+  background: #dcf3ff;
+  color: #257ca3;
+}
+
+.stop--camp .stop-icon {
+  border-color: #a07834;
+  background: #fdf5e6;
+  color: #a07834;
+}
+
 .stop--walk .stop-icon {
   border-color: var(--highlight);
   background: var(--highlight-soft);
