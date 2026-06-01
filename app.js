@@ -65,6 +65,17 @@
     return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(query);
   }
 
+  function linkifyDetail(text) {
+    return text.replace(/([a-z0-9-]+(?:\.[a-z0-9-]+)*\.[a-z]{2,})/gi, function (domain) {
+      return '<a href="https://' + domain + '" target="_blank" rel="noopener">' + domain + '</a>';
+    });
+  }
+
+  function formatKm(n) {
+    // Always render as "1.873" (Italian thousands), independent of ICU availability
+    return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  }
+
   /* ---------- Render ---------- */
 
   function renderHeader(meta) {
@@ -82,7 +93,7 @@
     const tiles = [
       { value: '9', label: 'Giorni' },
       { value: meta.totalKmWalk + ' km', label: 'A piedi' },
-      { value: meta.totalKmDrive.toLocaleString('it-IT') + ' km', label: 'In furgone' }
+      { value: formatKm(meta.totalKmDrive) + ' km', label: 'In furgone' }
     ];
     tiles.forEach(t => {
       root.appendChild(
@@ -135,7 +146,7 @@
     body.appendChild(el('h3', { class: 'stop-title' }, stop.title));
 
     if (stop.detail) {
-      body.appendChild(el('p', { class: 'stop-detail' }, stop.detail));
+      body.appendChild(el('p', { class: 'stop-detail', html: linkifyDetail(stop.detail) }));
     }
 
     const meta = el('div', { class: 'stop-meta' });
@@ -152,10 +163,10 @@
       meta.appendChild(chip);
       metaHasItems = true;
     }
-    if (stop.mapsQuery) {
+    if (stop.mapsDir || stop.mapsQuery) {
       const link = el('a', {
         class: 'maps-link',
-        href: mapsUrl(stop.mapsQuery),
+        href: stop.mapsDir || mapsUrl(stop.mapsQuery),
         target: '_blank',
         rel: 'noopener',
         'aria-label': 'Apri in Google Maps: ' + stop.title,

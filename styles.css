@@ -285,7 +285,13 @@ main {
   gap: 6px;
 }
 
+.day-summary-item {
+  white-space: nowrap;
+}
+
 .day-summary-item .icon {
+  width: 14px;
+  height: 14px;
   color: var(--text-faint);
 }
 
@@ -354,6 +360,33 @@ main {
   color: var(--highlight);
 }
 
+.stop--walk {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  margin: 6px 0;
+}
+
+.stop--walk + .stop--walk {
+  border-top: 1px solid var(--border);
+  margin-top: 6px;
+}
+
+.stop--walk.stop--highlight {
+  border-color: var(--highlight);
+}
+
+.stop--walk.stop--highlight::after {
+  content: "⭐";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  line-height: 1;
+  pointer-events: none;
+}
+
 .stop--midnight .stop-icon {
   border-color: var(--accent);
   background: var(--accent-soft);
@@ -379,7 +412,7 @@ main {
   line-height: 1.35;
 }
 
-.stop--highlight .stop-title::before {
+.stop--highlight:not(.stop--walk) .stop-title::before {
   content: "★";
   color: var(--highlight);
   margin-right: 5px;
@@ -395,6 +428,15 @@ main {
 }
 
 .stop--warning .stop-detail {
+  color: var(--warning);
+}
+
+.stop-detail a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.stop--warning .stop-detail a {
   color: var(--warning);
 }
 

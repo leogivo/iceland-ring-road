@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Iceland Ring Road",
-    "subtitle": "Furgone · 9 giorni · Solstizio d'estate",
+    "subtitle": "Furgone · 9 giorni",
     "dates": "13–21 Giugno 2026",
     "totalKmWalk": 100,
     "totalKmDrive": 1873,
@@ -9,14 +9,62 @@
     "mapUrl": "https://www.google.com/maps/dir/Keflavik+International+Airport/Reykjavik+Eco+Campsite/Gunnuhver+Iceland/Thingvellir+National+Park/Strokkur+Geyser/Gullfoss+Waterfall/Seljalandsfoss/Hvolsvollur+Campsite/Skogafoss/Dyrh%C3%B3laey/Reynisfjara+Black+Sand+Beach/Vik+Camping/Skaftafell+Visitor+Centre/Jokulsarlon/Diamond+Beach/Hofn+Camping/Seydisfjordur/Studlagil+Canyon/Camp+Egilsstadir/Dettifoss/Hverfjall+Crater/Godafoss/Hamrar+Campsite+Akureyri/Hellissandur+Camping/Djupalonsandur/Arnarstapi/Kirkjufell/Keflavik+International+Airport"
   },
   "campsites": [
-    { "night": 1, "name": "Reykjavík Eco-Campsite", "price": "~9.300 ISK (~€62)", "booking": "PRENOTARE ONLINE · reykjavikcampsite.is", "warning": true },
-    { "night": 2, "name": "Hvolsvöllur Campsite", "price": "~6.000 ISK (~€40)", "booking": "No prenotazione", "warning": false },
-    { "night": 3, "name": "Vík Camping", "price": "~5.500 ISK (~€37)", "booking": "No prenotazione", "warning": false },
-    { "night": 4, "name": "Höfn Campsite", "price": "~5.500 ISK (~€37)", "booking": "No prenotazione", "warning": false },
-    { "night": 5, "name": "Camp Egilsstaðir", "price": "~5.500 ISK (~€37)", "booking": "PRENOTARE ONLINE · campegilsstadir.is", "warning": true },
-    { "night": 6, "name": "Hamrar Campsite, Akureyri", "price": "~6.500 ISK (~€44)", "booking": "Prenotabile · booking.hamrar.is", "warning": false },
-    { "night": 7, "name": "Hellissandur Campsite", "price": "~5.000 ISK (~€34)", "booking": "No prenotazione", "warning": false },
-    { "night": 8, "name": "Hellissandur Campsite", "price": "~5.000 ISK (~€34)", "booking": "No prenotazione", "warning": false }
+    {
+      "night": 1,
+      "name": "Reykjavík Eco-Campsite",
+      "price": "~9.300 ISK (~€62)",
+      "booking": "PRENOTARE ONLINE · reykjavikcampsite.is",
+      "warning": true
+    },
+    {
+      "night": 2,
+      "name": "Hvolsvöllur Campsite",
+      "price": "~6.000 ISK (~€40)",
+      "booking": "No prenotazione",
+      "warning": false
+    },
+    {
+      "night": 3,
+      "name": "Vík Camping",
+      "price": "~5.500 ISK (~€37)",
+      "booking": "No prenotazione",
+      "warning": false
+    },
+    {
+      "night": 4,
+      "name": "Höfn Campsite",
+      "price": "~5.500 ISK (~€37)",
+      "booking": "No prenotazione",
+      "warning": false
+    },
+    {
+      "night": 5,
+      "name": "Camp Egilsstaðir",
+      "price": "~5.500 ISK (~€37)",
+      "booking": "PRENOTARE ONLINE · campegilsstadir.is",
+      "warning": true
+    },
+    {
+      "night": 6,
+      "name": "Hamrar Campsite, Akureyri",
+      "price": "~6.500 ISK (~€44)",
+      "booking": "Prenotabile · booking.hamrar.is",
+      "warning": false
+    },
+    {
+      "night": 7,
+      "name": "Hellissandur Campsite",
+      "price": "~5.000 ISK (~€34)",
+      "booking": "No prenotazione",
+      "warning": false
+    },
+    {
+      "night": 8,
+      "name": "Hellissandur Campsite",
+      "price": "~5.000 ISK (~€34)",
+      "booking": "No prenotazione",
+      "warning": false
+    }
   ],
   "days": [
     {
@@ -31,7 +79,8 @@
           "title": "KEF → ritiro furgone → Reykjavík",
           "distance": "50 km",
           "duration": "50 min",
-          "mapsQuery": "Keflavik International Airport to Reykjavik"
+          "mapsQuery": "Keflavik International Airport to Reykjavik",
+          "mapsDir": "https://www.google.com/maps/dir/Keflavik+International+Airport/Reykjavik+Iceland"
         },
         {
           "type": "camp",
@@ -70,7 +119,8 @@
           "title": "Reykjavík → Reykjanes (Gunnuhver)",
           "distance": "60 km",
           "duration": "50 min",
-          "mapsQuery": "Gunnuhver Iceland"
+          "mapsQuery": "Gunnuhver Iceland",
+          "mapsDir": "https://www.google.com/maps/dir/Reykjavik+Iceland/Gunnuhver+Iceland"
         },
         {
           "type": "walk",
@@ -87,7 +137,8 @@
           "title": "Reykjanes → Thingvellir",
           "distance": "60 km",
           "duration": "45 min",
-          "mapsQuery": "Thingvellir National Park"
+          "mapsQuery": "Thingvellir National Park",
+          "mapsDir": "https://www.google.com/maps/dir/Bridge+Between+Continents+Iceland/Thingvellir+National+Park"
         },
         {
           "type": "walk",
@@ -104,7 +155,8 @@
           "title": "Thingvellir → Geysir",
           "distance": "35 km",
           "duration": "30 min",
-          "mapsQuery": "Strokkur Geyser"
+          "mapsQuery": "Strokkur Geyser",
+          "mapsDir": "https://www.google.com/maps/dir/Thingvellir+National+Park/Geysir+Iceland"
         },
         {
           "type": "walk",
@@ -121,7 +173,8 @@
           "title": "Geysir → Gullfoss",
           "distance": "10 km",
           "duration": "10 min",
-          "mapsQuery": "Gullfoss Waterfall"
+          "mapsQuery": "Gullfoss Waterfall",
+          "mapsDir": "https://www.google.com/maps/dir/Geysir+Iceland/Gullfoss+Waterfall+Iceland"
         },
         {
           "type": "walk",
@@ -138,7 +191,8 @@
           "title": "Gullfoss → Seljalandsfoss",
           "distance": "85 km",
           "duration": "1h",
-          "mapsQuery": "Seljalandsfoss"
+          "mapsQuery": "Seljalandsfoss",
+          "mapsDir": "https://www.google.com/maps/dir/Gullfoss+Waterfall+Iceland/Seljalandsfoss+Iceland"
         },
         {
           "type": "walk",
@@ -156,7 +210,8 @@
           "title": "Seljalandsfoss → Hvolsvöllur",
           "distance": "30 km",
           "duration": "30 min",
-          "mapsQuery": "Hvolsvollur Campsite"
+          "mapsQuery": "Hvolsvollur Campsite",
+          "mapsDir": "https://www.google.com/maps/dir/Seljalandsfoss+Iceland/Hvolsvollur+Iceland"
         },
         {
           "type": "camp",
@@ -179,7 +234,8 @@
           "title": "Hvolsvöllur → Skógafoss",
           "distance": "30 km",
           "duration": "30 min",
-          "mapsQuery": "Skogafoss"
+          "mapsQuery": "Skogafoss",
+          "mapsDir": "https://www.google.com/maps/dir/Hvolsvollur+Iceland/Skogafoss+Iceland"
         },
         {
           "type": "walk",
@@ -197,7 +253,8 @@
           "title": "Skógafoss → Dyrhólaey",
           "distance": "25 km",
           "duration": "25 min",
-          "mapsQuery": "Dyrhólaey"
+          "mapsQuery": "Dyrhólaey",
+          "mapsDir": "https://www.google.com/maps/dir/Skogafoss+Iceland/Dyrholaey+Iceland"
         },
         {
           "type": "walk",
@@ -214,7 +271,8 @@
           "title": "Dyrhólaey → Reynisfjara",
           "distance": "14 km",
           "duration": "20 min",
-          "mapsQuery": "Reynisfjara Black Sand Beach"
+          "mapsQuery": "Reynisfjara Black Sand Beach",
+          "mapsDir": "https://www.google.com/maps/dir/Dyrholaey+Iceland/Reynisfjara+Black+Sand+Beach"
         },
         {
           "type": "walk",
@@ -232,7 +290,8 @@
           "title": "Reynisfjara → pranzo Vík → Vík Camping",
           "distance": "~10 km",
           "duration": "15 min",
-          "mapsQuery": "Vik Camping"
+          "mapsQuery": "Vik Camping",
+          "mapsDir": "https://www.google.com/maps/dir/Reynisfjara+Black+Sand+Beach/Vik+Camping+Iceland"
         },
         {
           "type": "camp",
@@ -260,7 +319,8 @@
           "title": "Vík → Skaftafell",
           "distance": "90 km",
           "duration": "1h 15min",
-          "mapsQuery": "Skaftafell Visitor Centre"
+          "mapsQuery": "Skaftafell Visitor Centre",
+          "mapsDir": "https://www.google.com/maps/dir/Vik+Iceland/Skaftafell+Visitor+Centre"
         },
         {
           "type": "walk",
@@ -278,7 +338,8 @@
           "title": "Skaftafell → Jökulsárlón",
           "distance": "70 km",
           "duration": "1h",
-          "mapsQuery": "Jokulsarlon"
+          "mapsQuery": "Jokulsarlon",
+          "mapsDir": "https://www.google.com/maps/dir/Skaftafell+Visitor+Centre/Jokulsarlon+Glacier+Lagoon"
         },
         {
           "type": "walk",
@@ -296,7 +357,8 @@
           "detail": "Dall'altra parte della strada",
           "distance": "1 km",
           "duration": "2 min",
-          "mapsQuery": "Diamond Beach Iceland"
+          "mapsQuery": "Diamond Beach Iceland",
+          "mapsDir": "https://www.google.com/maps/dir/Jokulsarlon+Glacier+Lagoon/Diamond+Beach+Iceland"
         },
         {
           "type": "walk",
@@ -313,7 +375,8 @@
           "title": "Diamond Beach → Fjallsárlón",
           "distance": "10 km",
           "duration": "10 min",
-          "mapsQuery": "Fjallsarlon"
+          "mapsQuery": "Fjallsarlon",
+          "mapsDir": "https://www.google.com/maps/dir/Diamond+Beach+Iceland/Fjallsarlon+Iceland"
         },
         {
           "type": "walk",
@@ -330,7 +393,8 @@
           "title": "Fjallsárlón → Höfn",
           "distance": "80 km",
           "duration": "1h",
-          "mapsQuery": "Hofn Camping"
+          "mapsQuery": "Hofn Camping",
+          "mapsDir": "https://www.google.com/maps/dir/Fjallsarlon+Iceland/Hofn+Iceland"
         },
         {
           "type": "camp",
@@ -368,7 +432,8 @@
           "detail": "Panoramica con brevi tratti sterrati",
           "distance": "180 km",
           "duration": "2h 30min",
-          "mapsQuery": "Egilsstadir"
+          "mapsQuery": "Egilsstadir",
+          "mapsDir": "https://www.google.com/maps/dir/Hofn+Iceland/Egilsstadir+Iceland"
         },
         {
           "type": "drive",
@@ -377,7 +442,8 @@
           "detail": "Strada di montagna panoramica",
           "distance": "27 km",
           "duration": "30 min",
-          "mapsQuery": "Seydisfjordur"
+          "mapsQuery": "Seydisfjordur",
+          "mapsDir": "https://www.google.com/maps/dir/Egilsstadir+Iceland/Seydisfjordur+Iceland"
         },
         {
           "type": "walk",
@@ -394,7 +460,8 @@
           "title": "Seyðisfjörður → Egilsstaðir (ritorno)",
           "distance": "27 km",
           "duration": "30 min",
-          "mapsQuery": "Egilsstadir"
+          "mapsQuery": "Egilsstadir",
+          "mapsDir": "https://www.google.com/maps/dir/Seydisfjordur+Iceland/Egilsstadir+Iceland"
         },
         {
           "type": "drive",
@@ -404,7 +471,8 @@
           "warning": true,
           "distance": "45 km",
           "duration": "45 min",
-          "mapsQuery": "Studlagil Canyon parking east"
+          "mapsQuery": "Studlagil Canyon parking east",
+          "mapsDir": "https://www.google.com/maps/dir/Egilsstadir+Iceland/Studlagil+Canyon+Iceland"
         },
         {
           "type": "walk",
@@ -422,7 +490,8 @@
           "title": "Stuðlagil → Camp Egilsstaðir",
           "distance": "45 km",
           "duration": "30 min",
-          "mapsQuery": "Camp Egilsstadir"
+          "mapsQuery": "Camp Egilsstadir",
+          "mapsDir": "https://www.google.com/maps/dir/Studlagil+Canyon+Iceland/Egilsstadir+Iceland"
         },
         {
           "type": "camp",
@@ -448,7 +517,8 @@
           "warning": true,
           "distance": "100 km",
           "duration": "1h 45min",
-          "mapsQuery": "Dettifoss east"
+          "mapsQuery": "Dettifoss east",
+          "mapsDir": "https://www.google.com/maps/dir/Egilsstadir+Iceland/65.8145,-16.3846"
         },
         {
           "type": "walk",
@@ -465,7 +535,8 @@
           "title": "Dettifoss → Hverir (Námafjall)",
           "distance": "50 km",
           "duration": "45 min",
-          "mapsQuery": "Hverir Namafjall"
+          "mapsQuery": "Hverir Namafjall",
+          "mapsDir": "https://www.google.com/maps/dir/65.8145,-16.3846/Hverir+Namafjall+Iceland"
         },
         {
           "type": "walk",
@@ -482,7 +553,8 @@
           "title": "Hverir → Hverfjall",
           "distance": "5 km",
           "duration": "10 min",
-          "mapsQuery": "Hverfjall Crater"
+          "mapsQuery": "Hverfjall Crater",
+          "mapsDir": "https://www.google.com/maps/dir/Hverir+Namafjall+Iceland/Hverfjall+Crater+Iceland"
         },
         {
           "type": "walk",
@@ -500,7 +572,8 @@
           "title": "Hverfjall → Dimmuborgir",
           "distance": "4 km",
           "duration": "10 min",
-          "mapsQuery": "Dimmuborgir"
+          "mapsQuery": "Dimmuborgir",
+          "mapsDir": "https://www.google.com/maps/dir/Hverfjall+Crater+Iceland/Dimmuborgir+Iceland"
         },
         {
           "type": "walk",
@@ -517,7 +590,8 @@
           "title": "Dimmuborgir → Goðafoss",
           "distance": "35 km",
           "duration": "30 min",
-          "mapsQuery": "Godafoss"
+          "mapsQuery": "Godafoss",
+          "mapsDir": "https://www.google.com/maps/dir/Dimmuborgir+Iceland/Godafoss+Iceland"
         },
         {
           "type": "walk",
@@ -534,7 +608,8 @@
           "title": "Goðafoss → terme Akureyri (Forest Lagoon)",
           "distance": "35 km",
           "duration": "30 min",
-          "mapsQuery": "Forest Lagoon Akureyri"
+          "mapsQuery": "Forest Lagoon Akureyri",
+          "mapsDir": "https://www.google.com/maps/dir/Godafoss+Iceland/Forest+Lagoon+Akureyri"
         },
         {
           "type": "drive",
@@ -542,7 +617,8 @@
           "title": "Terme → Hamrar Campsite",
           "distance": "10 km",
           "duration": "15 min",
-          "mapsQuery": "Hamrar Campsite Akureyri"
+          "mapsQuery": "Hamrar Campsite Akureyri",
+          "mapsDir": "https://www.google.com/maps/dir/Forest+Lagoon+Akureyri/Hamrar+Campsite+Akureyri"
         },
         {
           "type": "camp",
@@ -575,7 +651,8 @@
           "detail": "Nessuna sosta intermedia",
           "distance": "310 km",
           "duration": "4h 30min",
-          "mapsQuery": "Hellissandur Camping"
+          "mapsQuery": "Hellissandur Camping",
+          "mapsDir": "https://www.google.com/maps/dir/Akureyri+Iceland/Hellissandur+Iceland"
         },
         {
           "type": "camp",
@@ -622,7 +699,8 @@
           "title": "Hellissandur → Djúpalónssandur",
           "distance": "10 km",
           "duration": "15 min",
-          "mapsQuery": "Djupalonsandur"
+          "mapsQuery": "Djupalonsandur",
+          "mapsDir": "https://www.google.com/maps/dir/Hellissandur+Iceland/Djupalonsandur+Iceland"
         },
         {
           "type": "walk",
@@ -639,7 +717,8 @@
           "title": "Djúpalónssandur → Arnarstapi",
           "distance": "30 km",
           "duration": "35 min",
-          "mapsQuery": "Arnarstapi"
+          "mapsQuery": "Arnarstapi",
+          "mapsDir": "https://www.google.com/maps/dir/Djupalonsandur+Iceland/Arnarstapi+Iceland"
         },
         {
           "type": "walk",
@@ -657,7 +736,8 @@
           "title": "Arnarstapi → Kirkjufell",
           "distance": "45 km",
           "duration": "40 min",
-          "mapsQuery": "Kirkjufell"
+          "mapsQuery": "Kirkjufell",
+          "mapsDir": "https://www.google.com/maps/dir/Arnarstapi+Iceland/Kirkjufell+Iceland"
         },
         {
           "type": "walk",
@@ -675,7 +755,8 @@
           "title": "Kirkjufell → Ytri Tunga + Búðakirkja",
           "distance": "35 km",
           "duration": "35 min",
-          "mapsQuery": "Ytri Tunga Beach"
+          "mapsQuery": "Ytri Tunga Beach",
+          "mapsDir": "https://www.google.com/maps/dir/Kirkjufell+Iceland/Ytri+Tunga+Beach+Iceland"
         },
         {
           "type": "walk",
@@ -692,7 +773,8 @@
           "title": "Ytri Tunga → Hellissandur campeggio",
           "distance": "25 km",
           "duration": "25 min",
-          "mapsQuery": "Hellissandur Camping"
+          "mapsQuery": "Hellissandur Camping",
+          "mapsDir": "https://www.google.com/maps/dir/Ytri+Tunga+Beach+Iceland/Hellissandur+Iceland"
         },
         {
           "type": "camp",
@@ -738,7 +820,8 @@
           "title": "Hellissandur → Keflavík (Rte 54 + Ring Road)",
           "distance": "185 km",
           "duration": "2h 30min",
-          "mapsQuery": "Keflavik International Airport"
+          "mapsQuery": "Keflavik International Airport",
+          "mapsDir": "https://www.google.com/maps/dir/Hellissandur+Iceland/Keflavik+International+Airport"
         },
         {
           "type": "camp",
