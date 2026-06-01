@@ -1,0 +1,600 @@
+/* ============================================================
+   Iceland Ring Road — Nordic minimal
+   Mobile-first, no framework
+   ============================================================ */
+
+:root {
+  --bg: #FAFAF7;
+  --surface: #FFFFFF;
+  --border: #E8E8E3;
+  --border-strong: #D5D5CE;
+  --text: #1A1A1A;
+  --text-muted: #6B6B66;
+  --text-faint: #9A9A93;
+  --accent: #3B6E8F;
+  --accent-soft: #E6EEF3;
+  --warning: #C8853B;
+  --warning-soft: #F7EFE2;
+  --highlight: #4A6E4E;
+  --highlight-soft: #EAF1EA;
+  --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 2px 8px rgba(0,0,0,0.03);
+  --radius: 14px;
+  --radius-sm: 10px;
+  --radius-chip: 999px;
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  --max-w: 680px;
+  --pad-x: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15171A;
+    --surface: #1D2024;
+    --border: #2A2E33;
+    --border-strong: #3A3F46;
+    --text: #ECEDEE;
+    --text-muted: #9DA3AB;
+    --text-faint: #6B7178;
+    --accent: #6FA8C9;
+    --accent-soft: #1F2D38;
+    --warning: #D9A05B;
+    --warning-soft: #2E261A;
+    --highlight: #8DB492;
+    --highlight-soft: #1E2A1F;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 2px 8px rgba(0,0,0,0.25);
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ============================================================
+   Header sticky con day-nav
+   ============================================================ */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(250, 250, 247, 0.92);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding-top: env(safe-area-inset-top);
+}
+
+@media (prefers-color-scheme: dark) {
+  .site-header { background: rgba(21, 23, 26, 0.92); }
+}
+
+.site-header-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 12px var(--pad-x) 0;
+}
+
+.site-header-text {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.site-title {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.site-subtitle {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.day-nav {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 10px 0 12px;
+  margin-top: 8px;
+  scroll-snap-type: x proximity;
+}
+.day-nav::-webkit-scrollbar { display: none; }
+
+.day-chip {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: var(--radius-chip);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font-ui);
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
+  scroll-snap-align: start;
+  white-space: nowrap;
+}
+
+.day-chip:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.day-chip[aria-current="true"] {
+  background: var(--text);
+  color: var(--bg);
+  border-color: var(--text);
+}
+
+.day-chip-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.7;
+}
+
+/* ============================================================
+   Main
+   ============================================================ */
+
+main {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 16px var(--pad-x) 40px;
+}
+
+/* ============================================================
+   Trip summary
+   ============================================================ */
+
+.trip-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.summary-tile {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.summary-tile-value {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  line-height: 1.1;
+}
+
+.summary-tile-label {
+  font-size: 11px;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 4px;
+}
+
+/* ============================================================
+   Day cards
+   ============================================================ */
+
+.days {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.day-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 16px 8px;
+  scroll-margin-top: 140px;
+  box-shadow: var(--shadow);
+}
+
+.day-head {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.day-head-top {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.day-number {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  font-weight: 600;
+}
+
+.day-date {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.day-title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  margin: 2px 0 0;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+.day-summary {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.day-summary-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.day-summary-item .icon {
+  color: var(--text-faint);
+}
+
+/* ============================================================
+   Stops (timeline)
+   ============================================================ */
+
+.stops {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.stops::before {
+  content: "";
+  position: absolute;
+  left: 19px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: var(--border);
+}
+
+.stop {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 12px;
+  padding: 12px 0;
+  position: relative;
+}
+
+.stop + .stop {
+  border-top: 1px solid var(--border);
+}
+
+.stop-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.stop-icon .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.stop--warning .stop-icon {
+  border-color: var(--warning);
+  background: var(--warning-soft);
+  color: var(--warning);
+}
+
+.stop--highlight .stop-icon {
+  border-color: var(--highlight);
+  background: var(--highlight-soft);
+  color: var(--highlight);
+}
+
+.stop--midnight .stop-icon {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.stop-body {
+  min-width: 0;
+}
+
+.stop-time {
+  font-size: 12px;
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.stop-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 2px 0 2px;
+  color: var(--text);
+  line-height: 1.35;
+}
+
+.stop--highlight .stop-title::before {
+  content: "★";
+  color: var(--highlight);
+  margin-right: 5px;
+  font-size: 12px;
+  vertical-align: 1px;
+}
+
+.stop-detail {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.45;
+}
+
+.stop--warning .stop-detail {
+  color: var(--warning);
+}
+
+.stop-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+  align-items: center;
+}
+
+.meta-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  font-size: 11.5px;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-chip);
+  font-variant-numeric: tabular-nums;
+}
+
+.meta-chip .icon {
+  width: 12px;
+  height: 12px;
+  color: var(--text-faint);
+}
+
+.maps-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  font-size: 11.5px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 1px solid transparent;
+  border-radius: var(--radius-chip);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.maps-link:hover {
+  text-decoration: none;
+  border-color: var(--accent);
+}
+
+.maps-link .icon {
+  width: 12px;
+  height: 12px;
+}
+
+/* ============================================================
+   Campsites footer section
+   ============================================================ */
+
+.campsites-section {
+  margin-top: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 16px;
+}
+
+.campsites-title {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 14px;
+  letter-spacing: -0.01em;
+}
+
+.campsite-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.campsite-item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.campsite-item + .campsite-item {
+  border-top: 1px solid var(--border);
+}
+
+.campsite-night {
+  font-size: 11px;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  align-self: center;
+  text-align: center;
+}
+
+.campsite-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text);
+}
+
+.campsite-meta {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin: 2px 0 0;
+}
+
+.campsite-item--warning .campsite-meta {
+  color: var(--warning);
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+
+.site-footer {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 24px var(--pad-x) 32px;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  margin-top: 32px;
+}
+
+.map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  background: var(--text);
+  color: var(--bg);
+  border-radius: var(--radius-chip);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.map-link:hover { text-decoration: none; opacity: 0.9; }
+
+.footer-meta {
+  margin: 14px 0 0;
+  font-size: 11px;
+  color: var(--text-faint);
+  letter-spacing: 0.04em;
+}
+
+/* ============================================================
+   Offline toast
+   ============================================================ */
+
+.offline-toast {
+  position: fixed;
+  bottom: calc(16px + env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text);
+  color: var(--bg);
+  padding: 10px 16px;
+  border-radius: var(--radius-chip);
+  font-size: 13px;
+  box-shadow: var(--shadow);
+  z-index: 100;
+}
+
+/* ============================================================
+   SVG icons base
+   ============================================================ */
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   Wider screens
+   ============================================================ */
+
+@media (min-width: 640px) {
+  :root { --pad-x: 24px; }
+  .site-title { font-size: 22px; }
+  .day-title { font-size: 24px; }
+  .day-card { padding: 22px 22px 10px; }
+  .stop { padding: 14px 0; }
+  .trip-summary { gap: 12px; }
+}
+
+@media (min-width: 720px) {
+  .site-header-inner { padding-top: 16px; }
+}

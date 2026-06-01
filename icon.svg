@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#FAFAF7"/>
+  <!-- Mountains -->
+  <path d="M64 360 L168 200 L240 280 L320 160 L448 360 Z" fill="none" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+  <!-- Snow caps -->
+  <path d="M154 222 L168 200 L182 222 L172 232 L162 228 Z" fill="#1A1A1A"/>
+  <path d="M306 182 L320 160 L334 182 L324 192 L314 188 Z" fill="#1A1A1A"/>
+  <!-- Midnight sun -->
+  <circle cx="364" cy="148" r="38" fill="none" stroke="#3B6E8F" stroke-width="14"/>
+  <!-- Horizon line -->
+  <line x1="48" y1="380" x2="464" y2="380" stroke="#1A1A1A" stroke-width="10" stroke-linecap="round"/>
+</svg>

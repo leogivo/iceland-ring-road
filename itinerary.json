@@ -1,0 +1,753 @@
+{
+  "meta": {
+    "title": "Iceland Ring Road",
+    "subtitle": "Furgone · 9 giorni · Solstizio d'estate",
+    "dates": "13–21 Giugno 2026",
+    "totalKmWalk": 100,
+    "totalKmDrive": 1873,
+    "totalNights": 8,
+    "mapUrl": "https://www.google.com/maps/dir/Keflavik+International+Airport/Reykjavik+Eco+Campsite/Gunnuhver+Iceland/Thingvellir+National+Park/Strokkur+Geyser/Gullfoss+Waterfall/Seljalandsfoss/Hvolsvollur+Campsite/Skogafoss/Dyrh%C3%B3laey/Reynisfjara+Black+Sand+Beach/Vik+Camping/Skaftafell+Visitor+Centre/Jokulsarlon/Diamond+Beach/Hofn+Camping/Seydisfjordur/Studlagil+Canyon/Camp+Egilsstadir/Dettifoss/Hverfjall+Crater/Godafoss/Hamrar+Campsite+Akureyri/Hellissandur+Camping/Djupalonsandur/Arnarstapi/Kirkjufell/Keflavik+International+Airport"
+  },
+  "campsites": [
+    { "night": 1, "name": "Reykjavík Eco-Campsite", "price": "~9.300 ISK (~€62)", "booking": "PRENOTARE ONLINE · reykjavikcampsite.is", "warning": true },
+    { "night": 2, "name": "Hvolsvöllur Campsite", "price": "~6.000 ISK (~€40)", "booking": "No prenotazione", "warning": false },
+    { "night": 3, "name": "Vík Camping", "price": "~5.500 ISK (~€37)", "booking": "No prenotazione", "warning": false },
+    { "night": 4, "name": "Höfn Campsite", "price": "~5.500 ISK (~€37)", "booking": "No prenotazione", "warning": false },
+    { "night": 5, "name": "Camp Egilsstaðir", "price": "~5.500 ISK (~€37)", "booking": "PRENOTARE ONLINE · campegilsstadir.is", "warning": true },
+    { "night": 6, "name": "Hamrar Campsite, Akureyri", "price": "~6.500 ISK (~€44)", "booking": "Prenotabile · booking.hamrar.is", "warning": false },
+    { "night": 7, "name": "Hellissandur Campsite", "price": "~5.000 ISK (~€34)", "booking": "No prenotazione", "warning": false },
+    { "night": 8, "name": "Hellissandur Campsite", "price": "~5.000 ISK (~€34)", "booking": "No prenotazione", "warning": false }
+  ],
+  "days": [
+    {
+      "id": 1,
+      "date": "Sab 13 Giu",
+      "title": "Arrivo · Reykjavík",
+      "summary": { "walk": "~3 km", "drive": "50 km · 50 min" },
+      "stops": [
+        {
+          "type": "drive",
+          "time": "17:00–18:30",
+          "title": "KEF → ritiro furgone → Reykjavík",
+          "distance": "50 km",
+          "duration": "50 min",
+          "mapsQuery": "Keflavik International Airport to Reykjavik"
+        },
+        {
+          "type": "camp",
+          "time": "19:30",
+          "title": "Check-in Reykjavík Eco-Campsite",
+          "detail": "PRENOTARE ONLINE · reykjavikcampsite.is",
+          "warning": true,
+          "mapsQuery": "Reykjavik Eco Campsite"
+        },
+        {
+          "type": "walk",
+          "time": "22:00–23:30",
+          "title": "Passeggiata porto e lungomare",
+          "detail": "Pianeggiante · luce piena del midnight sun",
+          "distance": "~3 km",
+          "duration": "1h 30min",
+          "mapsQuery": "Old Harbour Reykjavik"
+        },
+        {
+          "type": "midnight",
+          "time": "23:30+",
+          "title": "Primo midnight sun",
+          "detail": "Il sole non tramonta"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "date": "Dom 14 Giu",
+      "title": "Reykjanes · Circolo d'Oro",
+      "summary": { "walk": "~9 km", "drive": "290 km · 3h 15min" },
+      "stops": [
+        {
+          "type": "drive",
+          "time": "07:30–08:20",
+          "title": "Reykjavík → Reykjanes (Gunnuhver)",
+          "distance": "60 km",
+          "duration": "50 min",
+          "mapsQuery": "Gunnuhver Iceland"
+        },
+        {
+          "type": "walk",
+          "time": "08:20–09:30",
+          "title": "Gunnuhver + Faro Reykjanesviti + Bridge Between Continents",
+          "detail": "Siti raggiungibili a piedi l'uno dall'altro",
+          "distance": "~3 km",
+          "duration": "1h 10min",
+          "mapsQuery": "Bridge Between Continents Iceland"
+        },
+        {
+          "type": "drive",
+          "time": "09:45–10:30",
+          "title": "Reykjanes → Thingvellir",
+          "distance": "60 km",
+          "duration": "45 min",
+          "mapsQuery": "Thingvellir National Park"
+        },
+        {
+          "type": "walk",
+          "time": "10:30–12:00",
+          "title": "Almannagjá rift walk → Öxarárfoss",
+          "detail": "Frattura tettonica tra i due continenti",
+          "distance": "~3 km",
+          "duration": "1h 30min",
+          "mapsQuery": "Öxarárfoss"
+        },
+        {
+          "type": "drive",
+          "time": "12:15–12:45",
+          "title": "Thingvellir → Geysir",
+          "distance": "35 km",
+          "duration": "30 min",
+          "mapsQuery": "Strokkur Geyser"
+        },
+        {
+          "type": "walk",
+          "time": "12:45–13:45",
+          "title": "Geysir Strokkur + pranzo",
+          "detail": "Eruzione ogni ~10 min · area geotermale",
+          "distance": "~1 km",
+          "duration": "1h",
+          "mapsQuery": "Strokkur Geyser"
+        },
+        {
+          "type": "drive",
+          "time": "13:45–14:00",
+          "title": "Geysir → Gullfoss",
+          "distance": "10 km",
+          "duration": "10 min",
+          "mapsQuery": "Gullfoss Waterfall"
+        },
+        {
+          "type": "walk",
+          "time": "14:00–15:00",
+          "title": "Gullfoss — viewpoint superiore + inferiore",
+          "detail": "Spray della cascata garantito",
+          "distance": "~2 km",
+          "duration": "1h",
+          "mapsQuery": "Gullfoss Waterfall"
+        },
+        {
+          "type": "drive",
+          "time": "15:15–16:15",
+          "title": "Gullfoss → Seljalandsfoss",
+          "distance": "85 km",
+          "duration": "1h",
+          "mapsQuery": "Seljalandsfoss"
+        },
+        {
+          "type": "walk",
+          "time": "16:15–17:15",
+          "title": "Seljalandsfoss (dietro la cascata) + Gljúfrabúi",
+          "detail": "Si bagna — portare impermeabile",
+          "warning": true,
+          "distance": "~2 km",
+          "duration": "1h",
+          "mapsQuery": "Seljalandsfoss"
+        },
+        {
+          "type": "drive",
+          "time": "17:30–18:00",
+          "title": "Seljalandsfoss → Hvolsvöllur",
+          "distance": "30 km",
+          "duration": "30 min",
+          "mapsQuery": "Hvolsvollur Campsite"
+        },
+        {
+          "type": "camp",
+          "time": "18:00",
+          "title": "Check-in Hvolsvöllur Campsite",
+          "detail": "No prenotazione",
+          "mapsQuery": "Hvolsvollur Campsite"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "date": "Lun 15 Giu",
+      "title": "Waterfall Way · Costa Sud · Vík",
+      "summary": { "walk": "~22 km", "drive": "79 km · 1h 30min" },
+      "stops": [
+        {
+          "type": "drive",
+          "time": "07:00–07:30",
+          "title": "Hvolsvöllur → Skógafoss",
+          "distance": "30 km",
+          "duration": "30 min",
+          "mapsQuery": "Skogafoss"
+        },
+        {
+          "type": "walk",
+          "time": "07:30–12:30",
+          "title": "⭐ Waterfall Way da Skógafoss",
+          "detail": "16 km A/R · 26 cascate · accorciabile a piacere",
+          "distance": "~16 km",
+          "duration": "5h",
+          "highlight": true,
+          "mapsQuery": "Fimmvorduhals trail Skogafoss"
+        },
+        {
+          "type": "drive",
+          "time": "12:45–13:10",
+          "title": "Skógafoss → Dyrhólaey",
+          "distance": "25 km",
+          "duration": "25 min",
+          "mapsQuery": "Dyrhólaey"
+        },
+        {
+          "type": "walk",
+          "time": "13:10–14:10",
+          "title": "Dyrhólaey — promontorio + puffin",
+          "detail": "Vista a 360° sull'Atlantico",
+          "distance": "~2 km",
+          "duration": "1h",
+          "mapsQuery": "Dyrhólaey"
+        },
+        {
+          "type": "drive",
+          "time": "14:10–14:30",
+          "title": "Dyrhólaey → Reynisfjara",
+          "distance": "14 km",
+          "duration": "20 min",
+          "mapsQuery": "Reynisfjara Black Sand Beach"
+        },
+        {
+          "type": "walk",
+          "time": "14:30–15:30",
+          "title": "Reynisfjara — spiaggia nera + colonne basaltiche",
+          "detail": "Sneaker waves — non girare le spalle al mare",
+          "warning": true,
+          "distance": "~2 km",
+          "duration": "1h",
+          "mapsQuery": "Reynisfjara Black Sand Beach"
+        },
+        {
+          "type": "drive",
+          "time": "15:45–16:30",
+          "title": "Reynisfjara → pranzo Vík → Vík Camping",
+          "distance": "~10 km",
+          "duration": "15 min",
+          "mapsQuery": "Vik Camping"
+        },
+        {
+          "type": "camp",
+          "time": "16:30",
+          "title": "Check-in Vík Camping",
+          "detail": "No prenotazione · vista sui faraglioni",
+          "mapsQuery": "Vik Camping"
+        },
+        {
+          "type": "midnight",
+          "time": "23:30+",
+          "title": "Midnight sun sulla spiaggia nera di Vík"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "date": "Mar 16 Giu",
+      "title": "Skaftafell · Lagune Glaciali · Höfn",
+      "summary": { "walk": "~12 km", "drive": "251 km · 2h 30min" },
+      "stops": [
+        {
+          "type": "drive",
+          "time": "07:00–08:15",
+          "title": "Vík → Skaftafell",
+          "distance": "90 km",
+          "duration": "1h 15min",
+          "mapsQuery": "Skaftafell Visitor Centre"
+        },
+        {
+          "type": "walk",
+          "time": "08:15–11:00",
+          "title": "⭐ Svartifoss + Sjónarnípa loop",
+          "detail": "Mattina presto: pochi turisti · colonne basaltiche nere",
+          "distance": "7.4 km",
+          "duration": "2h 45min",
+          "highlight": true,
+          "mapsQuery": "Svartifoss"
+        },
+        {
+          "type": "drive",
+          "time": "11:30–12:30",
+          "title": "Skaftafell → Jökulsárlón",
+          "distance": "70 km",
+          "duration": "1h",
+          "mapsQuery": "Jokulsarlon"
+        },
+        {
+          "type": "walk",
+          "time": "12:30–13:30",
+          "title": "Jökulsárlón — laguna glaciale",
+          "detail": "Iceberg galleggianti · foche",
+          "distance": "~2-3 km",
+          "duration": "1h",
+          "mapsQuery": "Jokulsarlon"
+        },
+        {
+          "type": "drive",
+          "time": "13:30–13:35",
+          "title": "Jökulsárlón → Diamond Beach",
+          "detail": "Dall'altra parte della strada",
+          "distance": "1 km",
+          "duration": "2 min",
+          "mapsQuery": "Diamond Beach Iceland"
+        },
+        {
+          "type": "walk",
+          "time": "13:35–14:30",
+          "title": "Diamond Beach — ghiaccio sulla sabbia nera",
+          "detail": "Pranzo al food truck",
+          "distance": "~2 km",
+          "duration": "55 min",
+          "mapsQuery": "Diamond Beach Iceland"
+        },
+        {
+          "type": "drive",
+          "time": "14:30–14:45",
+          "title": "Diamond Beach → Fjallsárlón",
+          "distance": "10 km",
+          "duration": "10 min",
+          "mapsQuery": "Fjallsarlon"
+        },
+        {
+          "type": "walk",
+          "time": "14:45–15:30",
+          "title": "Fjallsárlón — lago glaciale secondario",
+          "detail": "Più tranquillo di Jökulsárlón",
+          "distance": "~1.5 km",
+          "duration": "45 min",
+          "mapsQuery": "Fjallsarlon"
+        },
+        {
+          "type": "drive",
+          "time": "15:45–17:30",
+          "title": "Fjallsárlón → Höfn",
+          "distance": "80 km",
+          "duration": "1h",
+          "mapsQuery": "Hofn Camping"
+        },
+        {
+          "type": "camp",
+          "time": "17:30",
+          "title": "Check-in Höfn Campsite",
+          "detail": "No prenotazione · cena con gamberi",
+          "mapsQuery": "Hofn Camping"
+        },
+        {
+          "type": "walk",
+          "time": "20:00–21:00",
+          "title": "Passeggiata serale sul fiordo di Höfn",
+          "detail": "Vista su Vatnajökull",
+          "distance": "~2-3 km",
+          "duration": "1h",
+          "mapsQuery": "Hornafjordur Hofn"
+        },
+        {
+          "type": "midnight",
+          "time": "23:30+",
+          "title": "Midnight sun sul fiordo"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "date": "Mer 17 Giu",
+      "title": "Fiordi Est · Seyðisfjörður · Stuðlagil",
+      "summary": { "walk": "~12 km", "drive": "324 km · 4h" },
+      "stops": [
+        {
+          "type": "drive",
+          "time": "08:00–10:30",
+          "title": "Höfn → Fiordi Est → Egilsstaðir",
+          "detail": "Panoramica con brevi tratti sterrati",
+          "distance": "180 km",
+          "duration": "2h 30min",
+          "mapsQuery": "Egilsstadir"
+        },
+        {
+          "type": "drive",
+          "time": "10:30–11:00",
+          "title": "Egilsstaðir → Seyðisfjörður",
+          "detail": "Strada di montagna panoramica",
+          "distance": "27 km",
+          "duration": "30 min",
+          "mapsQuery": "Seydisfjordur"
+        },
+        {
+          "type": "walk",
+          "time": "11:00–12:00",
+          "title": "Seyðisfjörður — strada arcobaleno + chiesa blu",
+          "detail": "Porto e centro del villaggio",
+          "distance": "~2 km",
+          "duration": "1h",
+          "mapsQuery": "Seydisfjordur Blue Church"
+        },
+        {
+          "type": "drive",
+          "time": "12:00–12:30",
+          "title": "Seyðisfjörður → Egilsstaðir (ritorno)",
+          "distance": "27 km",
+          "duration": "30 min",
+          "mapsQuery": "Egilsstadir"
+        },
+        {
+          "type": "drive",
+          "time": "13:30–14:15",
+          "title": "Egilsstaðir → parcheggio Stuðlagil",
+          "detail": "Ultimi 3 km sterrati · velocità ridotta",
+          "warning": true,
+          "distance": "45 km",
+          "duration": "45 min",
+          "mapsQuery": "Studlagil Canyon parking east"
+        },
+        {
+          "type": "walk",
+          "time": "14:15–17:15",
+          "title": "⭐ Stuðlagil Canyon",
+          "detail": "9 km A/R · colonne basaltiche + fiume glaciale turchese · sponda est",
+          "distance": "~9 km",
+          "duration": "3h",
+          "highlight": true,
+          "mapsQuery": "Studlagil Canyon"
+        },
+        {
+          "type": "drive",
+          "time": "17:30–18:00",
+          "title": "Stuðlagil → Camp Egilsstaðir",
+          "distance": "45 km",
+          "duration": "30 min",
+          "mapsQuery": "Camp Egilsstadir"
+        },
+        {
+          "type": "camp",
+          "time": "18:00",
+          "title": "Check-in Camp Egilsstaðir",
+          "detail": "PRENOTARE ONLINE · campegilsstadir.is",
+          "warning": true,
+          "mapsQuery": "Camp Egilsstadir"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "date": "Gio 18 Giu",
+      "title": "Dettifoss · Mývatn · Goðafoss · Akureyri",
+      "summary": { "walk": "~14 km", "drive": "239 km · 3h 15min" },
+      "stops": [
+        {
+          "type": "drive",
+          "time": "07:30–09:15",
+          "title": "Egilsstaðir → Dettifoss (Rte 864 sterrata)",
+          "detail": "Strada sterrata — velocità ridotta",
+          "warning": true,
+          "distance": "100 km",
+          "duration": "1h 45min",
+          "mapsQuery": "Dettifoss east"
+        },
+        {
+          "type": "walk",
+          "time": "09:15–10:00",
+          "title": "Dettifoss — sponda est",
+          "detail": "Cascata più potente d'Europa · 45m × 100m",
+          "distance": "~2 km",
+          "duration": "45 min",
+          "mapsQuery": "Dettifoss east"
+        },
+        {
+          "type": "drive",
+          "time": "10:00–10:45",
+          "title": "Dettifoss → Hverir (Námafjall)",
+          "distance": "50 km",
+          "duration": "45 min",
+          "mapsQuery": "Hverir Namafjall"
+        },
+        {
+          "type": "walk",
+          "time": "10:45–11:30",
+          "title": "Hverir — fumarole e fanghi ribollenti",
+          "detail": "Paesaggio lunare · odore di zolfo",
+          "distance": "~1.5 km",
+          "duration": "45 min",
+          "mapsQuery": "Hverir Namafjall"
+        },
+        {
+          "type": "drive",
+          "time": "11:30–11:40",
+          "title": "Hverir → Hverfjall",
+          "distance": "5 km",
+          "duration": "10 min",
+          "mapsQuery": "Hverfjall Crater"
+        },
+        {
+          "type": "walk",
+          "time": "11:40–13:30",
+          "title": "⭐ Hverfjall — salita + giro del cratere",
+          "detail": "20 min salita · ~1h rim walk · vista 360° su Mývatn",
+          "distance": "~4-5 km",
+          "duration": "1h 50min",
+          "highlight": true,
+          "mapsQuery": "Hverfjall Crater"
+        },
+        {
+          "type": "drive",
+          "time": "14:15–14:25",
+          "title": "Hverfjall → Dimmuborgir",
+          "distance": "4 km",
+          "duration": "10 min",
+          "mapsQuery": "Dimmuborgir"
+        },
+        {
+          "type": "walk",
+          "time": "14:25–15:25",
+          "title": "Dimmuborgir — formazioni laviche nere",
+          "detail": "Colonne di lava · grotte · Castelli Oscuri",
+          "distance": "~3 km",
+          "duration": "1h",
+          "mapsQuery": "Dimmuborgir"
+        },
+        {
+          "type": "drive",
+          "time": "15:40–16:10",
+          "title": "Dimmuborgir → Goðafoss",
+          "distance": "35 km",
+          "duration": "30 min",
+          "mapsQuery": "Godafoss"
+        },
+        {
+          "type": "walk",
+          "time": "16:10–17:00",
+          "title": "Goðafoss — loop sponde est e ovest",
+          "detail": "La Cascata degli Dei",
+          "distance": "~2 km",
+          "duration": "50 min",
+          "mapsQuery": "Godafoss"
+        },
+        {
+          "type": "drive",
+          "time": "17:15–17:45",
+          "title": "Goðafoss → terme Akureyri (Forest Lagoon)",
+          "distance": "35 km",
+          "duration": "30 min",
+          "mapsQuery": "Forest Lagoon Akureyri"
+        },
+        {
+          "type": "drive",
+          "time": "19:45–20:00",
+          "title": "Terme → Hamrar Campsite",
+          "distance": "10 km",
+          "duration": "15 min",
+          "mapsQuery": "Hamrar Campsite Akureyri"
+        },
+        {
+          "type": "camp",
+          "time": "20:00",
+          "title": "Check-in Hamrar Campsite, Akureyri",
+          "detail": "Prenotabile · booking.hamrar.is",
+          "mapsQuery": "Hamrar Campsite Akureyri"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "date": "Ven 19 Giu",
+      "title": "Whale Watching · Snæfellsnes",
+      "summary": { "walk": "~6 km", "drive": "310 km · 4h 30min" },
+      "stops": [
+        {
+          "type": "walk",
+          "time": "08:00–10:30",
+          "title": "Whale watching — fiordo di Eyjafjörður",
+          "detail": "Prenotare in anticipo · avvistamento quasi garantito",
+          "warning": true,
+          "duration": "2h 30min",
+          "mapsQuery": "Akureyri whale watching"
+        },
+        {
+          "type": "drive",
+          "time": "11:00–15:30",
+          "title": "Akureyri → Snæfellsnes (Ring Road + Rte 54)",
+          "detail": "Nessuna sosta intermedia",
+          "distance": "310 km",
+          "duration": "4h 30min",
+          "mapsQuery": "Hellissandur Camping"
+        },
+        {
+          "type": "camp",
+          "time": "15:30",
+          "title": "Check-in Hellissandur Campsite",
+          "detail": "No prenotazione · non aderisce alla Camping Card",
+          "warning": true,
+          "mapsQuery": "Hellissandur Camping"
+        },
+        {
+          "type": "walk",
+          "time": "16:00–17:30",
+          "title": "Lava field Sandahraun",
+          "detail": "Campo di lava muschiato · vista su Snæfellsjökull",
+          "distance": "~3 km",
+          "duration": "1h 30min",
+          "mapsQuery": "Sandahraun lava field"
+        },
+        {
+          "type": "walk",
+          "time": "17:30–18:30",
+          "title": "Lóndrangar sea stacks — sentiero costiero",
+          "detail": "Due pinnacoli di basalto da 75m sull'oceano",
+          "distance": "~2 km",
+          "duration": "1h",
+          "mapsQuery": "Londrangar"
+        },
+        {
+          "type": "midnight",
+          "time": "23:00+",
+          "title": "Midnight sun sul ghiacciaio Snæfellsjökull"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "date": "Sab 20 Giu",
+      "title": "Snæfellsnes a piedi · Vigilia Solstizio",
+      "summary": { "walk": "~18 km", "drive": "145 km · 1h 30min" },
+      "stops": [
+        {
+          "type": "drive",
+          "time": "08:00–08:15",
+          "title": "Hellissandur → Djúpalónssandur",
+          "distance": "10 km",
+          "duration": "15 min",
+          "mapsQuery": "Djupalonsandur"
+        },
+        {
+          "type": "walk",
+          "time": "08:15–09:45",
+          "title": "Djúpalónssandur — spiaggia nera + relitto",
+          "detail": "Pietre di forza vichinghe · relitto britannico",
+          "distance": "~3 km",
+          "duration": "1h 30min",
+          "mapsQuery": "Djupalonsandur"
+        },
+        {
+          "type": "drive",
+          "time": "09:45–10:20",
+          "title": "Djúpalónssandur → Arnarstapi",
+          "distance": "30 km",
+          "duration": "35 min",
+          "mapsQuery": "Arnarstapi"
+        },
+        {
+          "type": "walk",
+          "time": "10:20–12:10",
+          "title": "⭐ Arnarstapi → Hellnar coastal trail (A/R)",
+          "detail": "Scogliere basaltiche · arco Gatklettur · vista sul ghiacciaio",
+          "distance": "5 km",
+          "duration": "1h 50min",
+          "highlight": true,
+          "mapsQuery": "Arnarstapi Hellnar trail"
+        },
+        {
+          "type": "drive",
+          "time": "13:15–13:55",
+          "title": "Arnarstapi → Kirkjufell",
+          "distance": "45 km",
+          "duration": "40 min",
+          "mapsQuery": "Kirkjufell"
+        },
+        {
+          "type": "walk",
+          "time": "13:55–15:45",
+          "title": "⭐ Kirkjufell + Kirkjufellsfoss loop",
+          "detail": "La montagna più fotografata d'Islanda · Game of Thrones",
+          "distance": "~4 km",
+          "duration": "1h 50min",
+          "highlight": true,
+          "mapsQuery": "Kirkjufell"
+        },
+        {
+          "type": "drive",
+          "time": "15:45–16:20",
+          "title": "Kirkjufell → Ytri Tunga + Búðakirkja",
+          "distance": "35 km",
+          "duration": "35 min",
+          "mapsQuery": "Ytri Tunga Beach"
+        },
+        {
+          "type": "walk",
+          "time": "16:20–17:45",
+          "title": "Ytri Tunga — foche + Búðakirkja riva lavica",
+          "detail": "Foche quasi certe in giugno",
+          "distance": "~3-4 km",
+          "duration": "1h 25min",
+          "mapsQuery": "Budakirkja Black Church"
+        },
+        {
+          "type": "drive",
+          "time": "17:45–18:15",
+          "title": "Ytri Tunga → Hellissandur campeggio",
+          "distance": "25 km",
+          "duration": "25 min",
+          "mapsQuery": "Hellissandur Camping"
+        },
+        {
+          "type": "camp",
+          "time": "18:15",
+          "title": "2ª notte Hellissandur Campsite",
+          "detail": "No prenotazione",
+          "mapsQuery": "Hellissandur Camping"
+        },
+        {
+          "type": "midnight",
+          "time": "23:00+",
+          "title": "Vigilia del Solstizio — luce dorata tutta la notte",
+          "detail": "Il momento più magico del viaggio",
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "date": "Dom 21 Giu",
+      "title": "Solstizio · Rientro KEF",
+      "summary": { "walk": "~4 km", "drive": "185 km · 2h 30min" },
+      "stops": [
+        {
+          "type": "midnight",
+          "time": "tutta la notte",
+          "title": "Solstizio d'estate — nessun tramonto",
+          "detail": "Luce continua 24h",
+          "highlight": true
+        },
+        {
+          "type": "walk",
+          "time": "07:00–08:30",
+          "title": "Ultima passeggiata — lava field Sandahraun",
+          "detail": "Luce dorata sul ghiacciaio — da non perdere",
+          "distance": "~3-4 km",
+          "duration": "1h 30min",
+          "mapsQuery": "Sandahraun lava field"
+        },
+        {
+          "type": "drive",
+          "time": "09:30–12:00",
+          "title": "Hellissandur → Keflavík (Rte 54 + Ring Road)",
+          "distance": "185 km",
+          "duration": "2h 30min",
+          "mapsQuery": "Keflavik International Airport"
+        },
+        {
+          "type": "camp",
+          "time": "12:00–19:00",
+          "title": "Consegna furgone + pranzo + check-in + volo 19:00",
+          "detail": "Check-in aeroporto alle 16:30",
+          "mapsQuery": "Keflavik International Airport"
+        }
+      ]
+    }
+  ]
+}

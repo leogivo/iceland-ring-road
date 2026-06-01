@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FAFAF7">
+  <meta name="description" content="Iceland Ring Road · 9 giorni in furgone · Solstizio d'estate 2026">
+  <title>Iceland Ring Road</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Iceland">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="site-header-inner">
+      <div class="site-header-text">
+        <h1 class="site-title" id="siteTitle">Iceland Ring Road</h1>
+        <p class="site-subtitle" id="siteSubtitle"></p>
+      </div>
+      <nav class="day-nav" id="dayNav" aria-label="Salta al giorno"></nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="trip-summary" id="tripSummary" aria-label="Riepilogo viaggio"></section>
+    <section class="days" id="days" aria-label="Itinerario per giorno"></section>
+    <section class="campsites-section" id="campsitesSection" aria-label="Riepilogo campeggi"></section>
+  </main>
+
+  <footer class="site-footer">
+    <a id="fullMapLink" class="map-link" target="_blank" rel="noopener">Apri mappa completa in Google Maps</a>
+    <p class="footer-meta">Disponibile offline · Aggiungi alla schermata Home</p>
+  </footer>
+
+  <div class="offline-toast" id="offlineToast" role="status" aria-live="polite" hidden>Sei offline · contenuti in cache</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
