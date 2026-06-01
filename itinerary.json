@@ -4,7 +4,7 @@
     "subtitle": "Furgone · 9 giorni",
     "dates": "13–21 Giugno 2026",
     "totalKmWalk": 100,
-    "totalKmDrive": 2274,
+    "totalKmDrive": 2394,
     "totalNights": 8,
     "mapUrl": "https://www.google.com/maps/dir/Keflavik+International+Airport/Reykjavik+Eco+Campsite/Gunnuhver+Iceland/Thingvellir+National+Park/Strokkur+Geyser/Gullfoss+Waterfall/Seljalandsfoss/Hvolsvollur+Campsite/Skogafoss/Dyrh%C3%B3laey/Reynisfjara+Black+Sand+Beach/Vik+Camping/Skaftafell+Visitor+Centre/Jokulsarlon/Diamond+Beach/Hofn+Camping/Seydisfjordur/Studlagil+Canyon/Camp+Egilsstadir/Dettifoss/Hverfjall+Crater/Godafoss/Hamrar+Campsite+Akureyri/Hellissandur+Camping/Djupalonsandur/Arnarstapi/Kirkjufell/Keflavik+International+Airport"
   },
@@ -71,14 +71,17 @@
       "id": 1,
       "date": "Sab 13 Giu",
       "title": "Arrivo · Reykjavík",
-      "summary": { "walk": "~3 km", "drive": "50 km · 50 min" },
+      "summary": {
+        "walk": "~3 km",
+        "drive": "~52 km · 51 min"
+      },
       "stops": [
         {
           "type": "drive",
           "time": "17:00–18:30",
           "title": "KEF → ritiro furgone → Reykjavík",
-          "distance": "50 km",
-          "duration": "50 min",
+          "distance": "52 km",
+          "duration": "51 min",
           "mapsQuery": "Keflavik International Airport to Reykjavik",
           "mapsDir": "https://www.google.com/maps/dir/Keflavik+International+Airport/Reykjavik+Iceland"
         },
@@ -112,14 +115,17 @@
       "id": 2,
       "date": "Dom 14 Giu",
       "title": "Reykjanes · Circolo d'Oro",
-      "summary": { "walk": "~9 km", "drive": "~377 km · 5h 15min" },
+      "summary": {
+        "walk": "~9 km",
+        "drive": "~375 km · 5h 48min"
+      },
       "stops": [
         {
           "type": "drive",
           "time": "07:30–08:20",
           "title": "Reykjavík → Reykjanes (Gunnuhver)",
-          "distance": "70 km",
-          "duration": "1h",
+          "distance": "66 km",
+          "duration": "1h 4min",
           "mapsQuery": "Gunnuhver Iceland",
           "mapsDir": "https://www.google.com/maps/dir/Reykjavik+Iceland/Gunnuhver+Iceland"
         },
@@ -137,8 +143,8 @@
           "type": "drive",
           "time": "09:45–10:30",
           "title": "Reykjanes → Thingvellir",
-          "distance": "100 km",
-          "duration": "1h 15min",
+          "distance": "104 km",
+          "duration": "1h 36min",
           "mapsQuery": "Thingvellir National Park",
           "mapsDir": "https://www.google.com/maps/dir/Bridge+Between+Continents+Iceland/Thingvellir+National+Park"
         },
@@ -156,8 +162,8 @@
           "type": "drive",
           "time": "12:15–12:45",
           "title": "Thingvellir → Geysir",
-          "distance": "55 km",
-          "duration": "50 min",
+          "distance": "56 km",
+          "duration": "54 min",
           "mapsQuery": "Strokkur Geyser",
           "mapsDir": "https://www.google.com/maps/dir/Thingvellir+National+Park/Geysir+Iceland"
         },
@@ -176,7 +182,7 @@
           "time": "13:45–14:00",
           "title": "Geysir → Gullfoss",
           "distance": "10 km",
-          "duration": "10 min",
+          "duration": "9 min",
           "mapsQuery": "Gullfoss Waterfall",
           "mapsDir": "https://www.google.com/maps/dir/Geysir+Iceland/Gullfoss+Waterfall+Iceland"
         },
@@ -194,8 +200,8 @@
           "type": "drive",
           "time": "15:15–16:15",
           "title": "Gullfoss → Seljalandsfoss",
-          "distance": "120 km",
-          "duration": "1h 40min",
+          "distance": "117 km",
+          "duration": "1h 45min",
           "mapsQuery": "Seljalandsfoss",
           "mapsDir": "https://www.google.com/maps/dir/Gullfoss+Waterfall+Iceland/Seljalandsfoss+Iceland"
         },
@@ -232,14 +238,17 @@
       "id": 3,
       "date": "Lun 15 Giu",
       "title": "Waterfall Way · Costa Sud · Vík",
-      "summary": { "walk": "~22 km", "drive": "~103 km · 1h 35min" },
+      "summary": {
+        "walk": "~22 km",
+        "drive": "~109 km · 1h 52min"
+      },
       "stops": [
         {
           "type": "drive",
           "time": "07:00–07:30",
           "title": "Hvolsvöllur → Skógafoss",
           "distance": "50 km",
-          "duration": "40 min",
+          "duration": "45 min",
           "mapsQuery": "Skogafoss",
           "mapsDir": "https://www.google.com/maps/dir/Hvolsvollur+Iceland/Skogafoss+Iceland"
         },
@@ -258,8 +267,8 @@
           "type": "drive",
           "time": "12:45–13:10",
           "title": "Skógafoss → Dyrhólaey",
-          "distance": "25 km",
-          "duration": "25 min",
+          "distance": "28 km",
+          "duration": "31 min",
           "mapsQuery": "Dyrhólaey",
           "mapsDir": "https://www.google.com/maps/dir/Skogafoss+Iceland/Dyrholaey+Iceland"
         },
@@ -277,8 +286,8 @@
           "type": "drive",
           "time": "14:10–14:30",
           "title": "Dyrhólaey → Reynisfjara",
-          "distance": "18 km",
-          "duration": "20 min",
+          "distance": "20 km",
+          "duration": "24 min",
           "mapsQuery": "Reynisfjara Black Sand Beach",
           "mapsDir": "https://www.google.com/maps/dir/Dyrholaey+Iceland/Reynisfjara+Black+Sand+Beach"
         },
@@ -297,8 +306,8 @@
           "type": "drive",
           "time": "15:45–16:30",
           "title": "Reynisfjara → pranzo Vík → Vík Camping",
-          "distance": "~10 km",
-          "duration": "15 min",
+          "distance": "11 km",
+          "duration": "12 min",
           "mapsQuery": "Vik Camping",
           "mapsDir": "https://www.google.com/maps/dir/Reynisfjara+Black+Sand+Beach/Vik+Camping+Iceland"
         },
@@ -320,14 +329,17 @@
       "id": 4,
       "date": "Mar 16 Giu",
       "title": "Skaftafell · Lagune Glaciali · Höfn",
-      "summary": { "walk": "~12 km", "drive": "~278 km · 4h" },
+      "summary": {
+        "walk": "~12 km",
+        "drive": "~304 km · 5h 4min"
+      },
       "stops": [
         {
           "type": "drive",
           "time": "07:00–08:15",
           "title": "Vík → Skaftafell",
           "distance": "140 km",
-          "duration": "2h",
+          "duration": "1h 59min",
           "mapsQuery": "Skaftafell Visitor Centre",
           "mapsDir": "https://www.google.com/maps/dir/Vik+Iceland/Skaftafell+Visitor+Centre"
         },
@@ -347,7 +359,7 @@
           "time": "11:30–12:30",
           "title": "Skaftafell → Jökulsárlón",
           "distance": "57 km",
-          "duration": "45 min",
+          "duration": "50 min",
           "mapsQuery": "Jokulsarlon",
           "mapsDir": "https://www.google.com/maps/dir/Skaftafell+Visitor+Centre/Jokulsarlon+Glacier+Lagoon"
         },
@@ -367,7 +379,7 @@
           "title": "Jökulsárlón → Diamond Beach",
           "detail": "Dall'altra parte della strada",
           "distance": "1 km",
-          "duration": "2 min",
+          "duration": "4 min",
           "mapsQuery": "Diamond Beach Iceland",
           "mapsDir": "https://www.google.com/maps/dir/Jokulsarlon+Glacier+Lagoon/Diamond+Beach+Iceland"
         },
@@ -385,8 +397,8 @@
           "type": "drive",
           "time": "14:30–14:45",
           "title": "Diamond Beach → Fjallsárlón",
-          "distance": "10 km",
-          "duration": "10 min",
+          "distance": "13 km",
+          "duration": "32 min",
           "mapsQuery": "Fjallsarlon",
           "mapsDir": "https://www.google.com/maps/dir/Diamond+Beach+Iceland/Fjallsarlon+Iceland"
         },
@@ -404,8 +416,8 @@
           "type": "drive",
           "time": "15:45–17:30",
           "title": "Fjallsárlón → Höfn",
-          "distance": "70 km",
-          "duration": "1h",
+          "distance": "93 km",
+          "duration": "1h 39min",
           "mapsQuery": "Hofn Camping",
           "mapsDir": "https://www.google.com/maps/dir/Fjallsarlon+Iceland/Hofn+Iceland"
         },
@@ -437,15 +449,18 @@
       "id": 5,
       "date": "Mer 17 Giu",
       "title": "Fiordi Est · Seyðisfjörður · Stuðlagil",
-      "summary": { "walk": "~12 km", "drive": "~338 km · 5h 45min" },
+      "summary": {
+        "walk": "~12 km",
+        "drive": "~352 km · 6h 1min"
+      },
       "stops": [
         {
           "type": "drive",
           "time": "08:00–10:30",
           "title": "Höfn → Fiordi Est → Egilsstaðir",
           "detail": "Panoramica con brevi tratti sterrati",
-          "distance": "180 km",
-          "duration": "2h 45min",
+          "distance": "186 km",
+          "duration": "2h 41min",
           "mapsQuery": "Egilsstadir",
           "mapsDir": "https://www.google.com/maps/dir/Hofn+Iceland/Egilsstadir+Iceland"
         },
@@ -455,7 +470,7 @@
           "title": "Egilsstaðir → Seyðisfjörður",
           "detail": "Strada di montagna panoramica",
           "distance": "27 km",
-          "duration": "30 min",
+          "duration": "26 min",
           "mapsQuery": "Seydisfjordur",
           "mapsDir": "https://www.google.com/maps/dir/Egilsstadir+Iceland/Seydisfjordur+Iceland"
         },
@@ -474,7 +489,7 @@
           "time": "12:00–12:30",
           "title": "Seyðisfjörður → Egilsstaðir (ritorno)",
           "distance": "27 km",
-          "duration": "30 min",
+          "duration": "26 min",
           "mapsQuery": "Egilsstadir",
           "mapsDir": "https://www.google.com/maps/dir/Seydisfjordur+Iceland/Egilsstadir+Iceland"
         },
@@ -484,8 +499,8 @@
           "title": "Egilsstaðir → parcheggio Stuðlagil",
           "detail": "Ultimi 3 km sterrati · velocità ridotta",
           "warning": true,
-          "distance": "52 km",
-          "duration": "1h",
+          "distance": "56 km",
+          "duration": "1h 14min",
           "mapsQuery": "Studlagil Canyon parking east",
           "mapsDir": "https://www.google.com/maps/dir/Egilsstadir+Iceland/Studlagil+Canyon+Iceland"
         },
@@ -504,8 +519,8 @@
           "type": "drive",
           "time": "17:30–18:00",
           "title": "Stuðlagil → Camp Egilsstaðir",
-          "distance": "52 km",
-          "duration": "1h",
+          "distance": "56 km",
+          "duration": "1h 14min",
           "mapsQuery": "Camp Egilsstadir",
           "mapsDir": "https://www.google.com/maps/dir/Studlagil+Canyon+Iceland/Egilsstadir+Iceland"
         },
@@ -523,7 +538,10 @@
       "id": 6,
       "date": "Gio 18 Giu",
       "title": "Dettifoss · Mývatn · Goðafoss · Akureyri",
-      "summary": { "walk": "~14 km", "drive": "~321 km · 4h 45min" },
+      "summary": {
+        "walk": "~14 km",
+        "drive": "~338 km · 5h 39min"
+      },
       "stops": [
         {
           "type": "drive",
@@ -531,8 +549,8 @@
           "title": "Egilsstaðir → Dettifoss (Rte 864 sterrata)",
           "detail": "Strada sterrata — velocità ridotta",
           "warning": true,
-          "distance": "163 km",
-          "duration": "2h 15min",
+          "distance": "160 km",
+          "duration": "2h 20min",
           "mapsQuery": "Dettifoss east",
           "mapsDir": "https://www.google.com/maps/dir/Egilsstadir+Iceland/65.8145,-16.3846"
         },
@@ -550,8 +568,8 @@
           "type": "drive",
           "time": "10:00–10:45",
           "title": "Dettifoss → Hverir (Námafjall)",
-          "distance": "60 km",
-          "duration": "50 min",
+          "distance": "63 km",
+          "duration": "57 min",
           "mapsQuery": "Hverir Namafjall",
           "mapsDir": "https://www.google.com/maps/dir/65.8145,-16.3846/Hverir+Namafjall+Iceland"
         },
@@ -569,8 +587,8 @@
           "type": "drive",
           "time": "11:30–11:40",
           "title": "Hverir → Hverfjall",
-          "distance": "5 km",
-          "duration": "10 min",
+          "distance": "12 km",
+          "duration": "22 min",
           "mapsQuery": "Hverfjall Crater",
           "mapsDir": "https://www.google.com/maps/dir/Hverir+Namafjall+Iceland/Hverfjall+Crater+Iceland"
         },
@@ -589,8 +607,8 @@
           "type": "drive",
           "time": "14:15–14:25",
           "title": "Hverfjall → Dimmuborgir",
-          "distance": "4 km",
-          "duration": "10 min",
+          "distance": "6 km",
+          "duration": "17 min",
           "mapsQuery": "Dimmuborgir",
           "mapsDir": "https://www.google.com/maps/dir/Hverfjall+Crater+Iceland/Dimmuborgir+Iceland"
         },
@@ -609,7 +627,7 @@
           "time": "15:40–16:10",
           "title": "Dimmuborgir → Goðafoss",
           "distance": "49 km",
-          "duration": "40 min",
+          "duration": "47 min",
           "mapsQuery": "Godafoss",
           "mapsDir": "https://www.google.com/maps/dir/Dimmuborgir+Iceland/Godafoss+Iceland"
         },
@@ -627,8 +645,8 @@
           "type": "drive",
           "time": "17:15–17:45",
           "title": "Goðafoss → terme Akureyri (Forest Lagoon)",
-          "distance": "35 km",
-          "duration": "30 min",
+          "distance": "41 km",
+          "duration": "44 min",
           "mapsQuery": "Forest Lagoon Akureyri",
           "mapsDir": "https://www.google.com/maps/dir/Godafoss+Iceland/Forest+Lagoon+Akureyri"
         },
@@ -636,8 +654,8 @@
           "type": "drive",
           "time": "19:45–20:00",
           "title": "Terme → Hamrar Campsite",
-          "distance": "5 km",
-          "duration": "10 min",
+          "distance": "7 km",
+          "duration": "12 min",
           "mapsQuery": "Hamrar Campsite Akureyri",
           "mapsDir": "https://www.google.com/maps/dir/Forest+Lagoon+Akureyri/Hamrar+Campsite+Akureyri"
         },
@@ -654,7 +672,10 @@
       "id": 7,
       "date": "Ven 19 Giu",
       "title": "Whale Watching · Snæfellsnes",
-      "summary": { "walk": "~6 km", "drive": "~408 km · 5h" },
+      "summary": {
+        "walk": "~6 km",
+        "drive": "~403 km · 6h"
+      },
       "stops": [
         {
           "type": "walk",
@@ -671,8 +692,8 @@
           "time": "11:00–15:30",
           "title": "Akureyri → Snæfellsnes (Ring Road + Rte 54)",
           "detail": "Nessuna sosta intermedia",
-          "distance": "408 km",
-          "duration": "5h",
+          "distance": "403 km",
+          "duration": "6h",
           "mapsQuery": "Hellissandur Camping",
           "mapsDir": "https://www.google.com/maps/dir/Akureyri+Iceland/Hellissandur+Iceland"
         },
@@ -715,14 +736,17 @@
       "id": 8,
       "date": "Sab 20 Giu",
       "title": "Snæfellsnes a piedi · Vigilia Solstizio",
-      "summary": { "walk": "~18 km", "drive": "~151 km · 2h 35min" },
+      "summary": {
+        "walk": "~18 km",
+        "drive": "~211 km · 3h 45min"
+      },
       "stops": [
         {
           "type": "drive",
           "time": "08:00–08:15",
           "title": "Hellissandur → Djúpalónssandur",
-          "distance": "10 km",
-          "duration": "15 min",
+          "distance": "25 km",
+          "duration": "24 min",
           "mapsQuery": "Djupalonsandur",
           "mapsDir": "https://www.google.com/maps/dir/Hellissandur+Iceland/Djupalonsandur+Iceland"
         },
@@ -740,8 +764,8 @@
           "type": "drive",
           "time": "09:45–10:20",
           "title": "Djúpalónssandur → Arnarstapi",
-          "distance": "14 km",
-          "duration": "20 min",
+          "distance": "16 km",
+          "duration": "16 min",
           "mapsQuery": "Arnarstapi",
           "mapsDir": "https://www.google.com/maps/dir/Djupalonsandur+Iceland/Arnarstapi+Iceland"
         },
@@ -760,8 +784,8 @@
           "type": "drive",
           "time": "13:15–13:55",
           "title": "Arnarstapi → Kirkjufell",
-          "distance": "60 km",
-          "duration": "55 min",
+          "distance": "50 km",
+          "duration": "47 min",
           "mapsQuery": "Kirkjufell",
           "mapsDir": "https://www.google.com/maps/dir/Arnarstapi+Iceland/Kirkjufell+Iceland"
         },
@@ -780,8 +804,8 @@
           "type": "drive",
           "time": "15:45–16:20",
           "title": "Kirkjufell → Ytri Tunga + Búðakirkja",
-          "distance": "20 km",
-          "duration": "20 min",
+          "distance": "61 km",
+          "duration": "1h 9min",
           "mapsQuery": "Ytri Tunga Beach",
           "mapsDir": "https://www.google.com/maps/dir/Kirkjufell+Iceland/Ytri+Tunga+Beach+Iceland"
         },
@@ -799,8 +823,8 @@
           "type": "drive",
           "time": "17:45–18:15",
           "title": "Ytri Tunga → Hellissandur campeggio",
-          "distance": "47 km",
-          "duration": "45 min",
+          "distance": "59 km",
+          "duration": "1h 9min",
           "mapsQuery": "Hellissandur Camping",
           "mapsDir": "https://www.google.com/maps/dir/Ytri+Tunga+Beach+Iceland/Hellissandur+Iceland"
         },
@@ -824,7 +848,10 @@
       "id": 9,
       "date": "Dom 21 Giu",
       "title": "Solstizio · Rientro KEF",
-      "summary": { "walk": "~4 km", "drive": "~248 km · 3h 20min" },
+      "summary": {
+        "walk": "~4 km",
+        "drive": "~250 km · 3h 46min"
+      },
       "stops": [
         {
           "type": "midnight",
@@ -847,8 +874,8 @@
           "type": "drive",
           "time": "09:30–12:00",
           "title": "Hellissandur → Keflavík (Rte 54 + Ring Road)",
-          "distance": "248 km",
-          "duration": "3h 20min",
+          "distance": "250 km",
+          "duration": "3h 46min",
           "mapsQuery": "Keflavik International Airport",
           "mapsDir": "https://www.google.com/maps/dir/Hellissandur+Iceland/Keflavik+International+Airport"
         },
