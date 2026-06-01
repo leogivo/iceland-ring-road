@@ -97,7 +97,8 @@
           "detail": "Pianeggiante · luce piena del midnight sun",
           "distance": "~3 km",
           "duration": "1h 30min",
-          "mapsQuery": "Old Harbour Reykjavik"
+          "mapsQuery": "Old Harbour Reykjavik",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Reykjavik+Eco+Campsite&destination=Old+Harbour+Reykjavik&travelmode=walking"
         },
         {
           "type": "midnight",
@@ -129,7 +130,8 @@
           "detail": "Siti raggiungibili a piedi l'uno dall'altro",
           "distance": "~3 km",
           "duration": "1h 10min",
-          "mapsQuery": "Bridge Between Continents Iceland"
+          "mapsQuery": "Bridge Between Continents Iceland",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Gunnuhver+Iceland&destination=Bridge+Between+Continents+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -147,7 +149,8 @@
           "detail": "Frattura tettonica tra i due continenti",
           "distance": "~3 km",
           "duration": "1h 30min",
-          "mapsQuery": "Öxarárfoss"
+          "mapsQuery": "Öxarárfoss",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Thingvellir+National+Park&destination=Oxararfoss+Thingvellir&travelmode=walking"
         },
         {
           "type": "drive",
@@ -165,7 +168,8 @@
           "detail": "Eruzione ogni ~10 min · area geotermale",
           "distance": "~1 km",
           "duration": "1h",
-          "mapsQuery": "Strokkur Geyser"
+          "mapsQuery": "Strokkur Geyser",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Geysir+Iceland&destination=Strokkur+Geyser+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -183,7 +187,8 @@
           "detail": "Spray della cascata garantito",
           "distance": "~2 km",
           "duration": "1h",
-          "mapsQuery": "Gullfoss Waterfall"
+          "mapsQuery": "Gullfoss Waterfall",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Gullfoss+upper+viewpoint+Iceland&destination=Gullfoss+lower+viewpoint+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -202,7 +207,8 @@
           "warning": true,
           "distance": "~2 km",
           "duration": "1h",
-          "mapsQuery": "Seljalandsfoss"
+          "mapsQuery": "Seljalandsfoss",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Seljalandsfoss+Iceland&destination=Gljufrabui+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -245,7 +251,8 @@
           "distance": "~16 km",
           "duration": "5h",
           "highlight": true,
-          "mapsQuery": "Fimmvorduhals trail Skogafoss"
+          "mapsQuery": "Fimmvorduhals trail Skogafoss",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Skogafoss+Iceland&destination=Fimmvorduhals+trail+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -263,7 +270,8 @@
           "detail": "Vista a 360° sull'Atlantico",
           "distance": "~2 km",
           "duration": "1h",
-          "mapsQuery": "Dyrhólaey"
+          "mapsQuery": "Dyrhólaey",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Dyrholaey+parking+Iceland&destination=Dyrholaey+lighthouse+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -282,7 +290,8 @@
           "warning": true,
           "distance": "~2 km",
           "duration": "1h",
-          "mapsQuery": "Reynisfjara Black Sand Beach"
+          "mapsQuery": "Reynisfjara Black Sand Beach",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Reynisfjara+parking+Iceland&destination=Reynisfjara+Black+Sand+Beach&travelmode=walking"
         },
         {
           "type": "drive",
@@ -330,7 +339,8 @@
           "distance": "7.4 km",
           "duration": "2h 45min",
           "highlight": true,
-          "mapsQuery": "Svartifoss"
+          "mapsQuery": "Svartifoss",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Skaftafell+Visitor+Centre&destination=Svartifoss+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -348,7 +358,8 @@
           "detail": "Iceberg galleggianti · foche",
           "distance": "~2-3 km",
           "duration": "1h",
-          "mapsQuery": "Jokulsarlon"
+          "mapsQuery": "Jokulsarlon",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Jokulsarlon+Glacier+Lagoon&destination=Jokulsarlon+viewpoint+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -367,7 +378,8 @@
           "detail": "Pranzo al food truck",
           "distance": "~2 km",
           "duration": "55 min",
-          "mapsQuery": "Diamond Beach Iceland"
+          "mapsQuery": "Diamond Beach Iceland",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Diamond+Beach+Iceland&destination=Diamond+Beach+east+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -385,7 +397,8 @@
           "detail": "Più tranquillo di Jökulsárlón",
           "distance": "~1.5 km",
           "duration": "45 min",
-          "mapsQuery": "Fjallsarlon"
+          "mapsQuery": "Fjallsarlon",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Fjallsarlon+parking+Iceland&destination=Fjallsarlon+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -410,7 +423,8 @@
           "detail": "Vista su Vatnajökull",
           "distance": "~2-3 km",
           "duration": "1h",
-          "mapsQuery": "Hornafjordur Hofn"
+          "mapsQuery": "Hornafjordur Hofn",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Hofn+Camping+Iceland&destination=Hornafjordur+Hofn+Iceland&travelmode=walking"
         },
         {
           "type": "midnight",
@@ -452,7 +466,8 @@
           "detail": "Porto e centro del villaggio",
           "distance": "~2 km",
           "duration": "1h",
-          "mapsQuery": "Seydisfjordur Blue Church"
+          "mapsQuery": "Seydisfjordur Blue Church",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Seydisfjordur+harbour+Iceland&destination=Seydisfjordur+Blue+Church+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -482,7 +497,8 @@
           "distance": "~9 km",
           "duration": "3h",
           "highlight": true,
-          "mapsQuery": "Studlagil Canyon"
+          "mapsQuery": "Studlagil Canyon",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Studlagil+Canyon+parking+east+Iceland&destination=Studlagil+Canyon+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -527,7 +543,8 @@
           "detail": "Cascata più potente d'Europa · 45m × 100m",
           "distance": "~2 km",
           "duration": "45 min",
-          "mapsQuery": "Dettifoss east"
+          "mapsQuery": "Dettifoss east",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=65.8145,-16.3846&destination=65.8145,-16.3846&travelmode=walking"
         },
         {
           "type": "drive",
@@ -545,7 +562,8 @@
           "detail": "Paesaggio lunare · odore di zolfo",
           "distance": "~1.5 km",
           "duration": "45 min",
-          "mapsQuery": "Hverir Namafjall"
+          "mapsQuery": "Hverir Namafjall",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Hverir+Namafjall+parking+Iceland&destination=Hverir+Namafjall+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -564,7 +582,8 @@
           "distance": "~4-5 km",
           "duration": "1h 50min",
           "highlight": true,
-          "mapsQuery": "Hverfjall Crater"
+          "mapsQuery": "Hverfjall Crater",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Hverfjall+parking+Iceland&destination=Hverfjall+Crater+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -582,7 +601,8 @@
           "detail": "Colonne di lava · grotte · Castelli Oscuri",
           "distance": "~3 km",
           "duration": "1h",
-          "mapsQuery": "Dimmuborgir"
+          "mapsQuery": "Dimmuborgir",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Dimmuborgir+parking+Iceland&destination=Dimmuborgir+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -600,7 +620,8 @@
           "detail": "La Cascata degli Dei",
           "distance": "~2 km",
           "duration": "50 min",
-          "mapsQuery": "Godafoss"
+          "mapsQuery": "Godafoss",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Godafoss+east+bank+Iceland&destination=Godafoss+west+bank+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -639,10 +660,11 @@
           "type": "walk",
           "time": "08:00–10:30",
           "title": "Whale watching — fiordo di Eyjafjörður",
-          "detail": "Prenotare in anticipo · avvistamento quasi garantito",
+          "detail": "Prenotare in anticipo · whalewatchingakureyri.is",
           "warning": true,
           "duration": "2h 30min",
-          "mapsQuery": "Akureyri whale watching"
+          "mapsQuery": "Akureyri whale watching",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Hamrar+Campsite+Akureyri&destination=Akureyri+whale+watching+harbor&travelmode=walking"
         },
         {
           "type": "drive",
@@ -669,7 +691,8 @@
           "detail": "Campo di lava muschiato · vista su Snæfellsjökull",
           "distance": "~3 km",
           "duration": "1h 30min",
-          "mapsQuery": "Sandahraun lava field"
+          "mapsQuery": "Sandahraun lava field",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Hellissandur+Iceland&destination=Sandahraun+lava+field+Iceland&travelmode=walking"
         },
         {
           "type": "walk",
@@ -678,7 +701,8 @@
           "detail": "Due pinnacoli di basalto da 75m sull'oceano",
           "distance": "~2 km",
           "duration": "1h",
-          "mapsQuery": "Londrangar"
+          "mapsQuery": "Londrangar",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Londrangar+parking+Iceland&destination=Londrangar+sea+stacks+Iceland&travelmode=walking"
         },
         {
           "type": "midnight",
@@ -709,7 +733,8 @@
           "detail": "Pietre di forza vichinghe · relitto britannico",
           "distance": "~3 km",
           "duration": "1h 30min",
-          "mapsQuery": "Djupalonsandur"
+          "mapsQuery": "Djupalonsandur",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Djupalonsandur+parking+Iceland&destination=Djupalonsandur+shipwreck+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -728,7 +753,8 @@
           "distance": "5 km",
           "duration": "1h 50min",
           "highlight": true,
-          "mapsQuery": "Arnarstapi Hellnar trail"
+          "mapsQuery": "Arnarstapi Hellnar trail",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Arnarstapi+Iceland&destination=Hellnar+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -747,7 +773,8 @@
           "distance": "~4 km",
           "duration": "1h 50min",
           "highlight": true,
-          "mapsQuery": "Kirkjufell"
+          "mapsQuery": "Kirkjufell",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Kirkjufellsfoss+Iceland&destination=Kirkjufell+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -765,7 +792,8 @@
           "detail": "Foche quasi certe in giugno",
           "distance": "~3-4 km",
           "duration": "1h 25min",
-          "mapsQuery": "Budakirkja Black Church"
+          "mapsQuery": "Budakirkja Black Church",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Ytri+Tunga+Beach+Iceland&destination=Budakirkja+Black+Church+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -812,7 +840,8 @@
           "detail": "Luce dorata sul ghiacciaio — da non perdere",
           "distance": "~3-4 km",
           "duration": "1h 30min",
-          "mapsQuery": "Sandahraun lava field"
+          "mapsQuery": "Sandahraun lava field",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Hellissandur+Iceland&destination=Sandahraun+lava+field+Iceland&travelmode=walking"
         },
         {
           "type": "drive",

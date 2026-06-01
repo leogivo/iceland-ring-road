@@ -305,6 +305,19 @@ main {
   border-top: 1px solid var(--border);
 }
 
+.stop--highlight {
+  background: var(--highlight-soft);
+  border: 1px solid var(--highlight);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  margin: 6px 0;
+}
+
+.stop--highlight + .stop,
+.stop + .stop--highlight {
+  border-top: none;
+}
+
 .stop-icon {
   width: 40px;
   height: 40px;
