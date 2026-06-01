@@ -22,8 +22,10 @@
     openIn: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>',
     // Pin (location)
     pin: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.5-7-12a7 7 0 1 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9.5" r="2.5"/></svg>',
-    // Footprints (km a piedi)
-    boot: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4c-1.5 0-2 1.5-2 3v6H4v3a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3v-2l5-2v-2l-5-1V8c0-2.5-2-4-4-4z"/><circle cx="8" cy="7" r=".6" fill="currentColor" stroke="none"/><circle cx="10.5" cy="7.5" r=".6" fill="currentColor" stroke="none"/></svg>',
+    // Road / distance
+    road: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21 10 3"/><path d="M19 21 14 3"/><path d="M12 7v2"/><path d="M12 13v2"/></svg>',
+    // Clock / duration
+    clock: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>',
     // Steering wheel / route
     route: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h8a4 4 0 0 1 0 8H8a4 4 0 0 0 0 8h11"/></svg>',
     // Tent (campsites)
@@ -153,13 +155,14 @@
     let metaHasItems = false;
 
     if (stop.distance) {
-      const chip = el('span', { class: 'meta-chip', html: ICONS.boot });
+      const chip = el('span', { class: 'meta-chip', html: ICONS.road });
       chip.appendChild(document.createTextNode(' ' + stop.distance));
       meta.appendChild(chip);
       metaHasItems = true;
     }
     if (stop.duration) {
-      const chip = el('span', { class: 'meta-chip' }, '⏱ ' + stop.duration);
+      const chip = el('span', { class: 'meta-chip', html: ICONS.clock });
+      chip.appendChild(document.createTextNode(' ' + stop.duration));
       meta.appendChild(chip);
       metaHasItems = true;
     }
