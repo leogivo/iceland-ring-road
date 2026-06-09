@@ -71,6 +71,21 @@
     return link.label || link.url.replace(/^https?:\/\//, '');
   }
 
+  // Build an anchor chip from any object's optional `link` { url, label }.
+  // Returns null when absent, so callers can append unconditionally.
+  function linkChip(link) {
+    if (!link || !link.url) return null;
+    const a = el('a', {
+      class: 'maps-link',
+      href: link.url,
+      target: '_blank',
+      rel: 'noopener',
+      html: ICONS.openIn
+    });
+    a.appendChild(document.createTextNode(' ' + linkLabel(link)));
+    return a;
+  }
+
   function formatKm(n) {
     // Always render as "1.873" (Italian thousands), independent of ICU availability
     return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
@@ -185,16 +200,9 @@
       meta.appendChild(link);
       metaHasItems = true;
     }
-    if (stop.link && stop.link.url) {
-      const a = el('a', {
-        class: 'maps-link',
-        href: stop.link.url,
-        target: '_blank',
-        rel: 'noopener',
-        html: ICONS.openIn
-      });
-      a.appendChild(document.createTextNode(' ' + linkLabel(stop.link)));
-      meta.appendChild(a);
+    const stopLink = linkChip(stop.link);
+    if (stopLink) {
+      meta.appendChild(stopLink);
       metaHasItems = true;
     }
     if (metaHasItems) body.appendChild(meta);
@@ -234,6 +242,13 @@
       head.appendChild(summary);
     }
 
+    const dayLink = linkChip(day.link);
+    if (dayLink) {
+      const wrap = el('div', { class: 'day-link' });
+      wrap.appendChild(dayLink);
+      head.appendChild(wrap);
+    }
+
     card.appendChild(head);
 
     const ul = el('ul', { class: 'stops' });
@@ -261,17 +276,8 @@
         el('p', { class: 'campsite-name' }, c.name),
         el('p', { class: 'campsite-meta' }, c.price + ' · ' + c.booking)
       ]);
-      if (c.link && c.link.url) {
-        const a = el('a', {
-          class: 'maps-link',
-          href: c.link.url,
-          target: '_blank',
-          rel: 'noopener',
-          html: ICONS.openIn
-        });
-        a.appendChild(document.createTextNode(' ' + linkLabel(c.link)));
-        right.appendChild(a);
-      }
+      const campLink = linkChip(c.link);
+      if (campLink) right.appendChild(campLink);
       li.appendChild(right);
       ul.appendChild(li);
     });

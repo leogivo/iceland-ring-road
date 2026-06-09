@@ -123,6 +123,7 @@
         "walk": "~15 km",
         "drive": "~252 km · 3h 53min"
       },
+      "link": { "url": "https://www.thingvellir.is", "label": "thingvellir.is" },
       "stops": [
         {
           "type": "drive",
