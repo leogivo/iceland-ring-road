@@ -67,10 +67,8 @@
     return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(query);
   }
 
-  function linkifyDetail(text) {
-    return text.replace(/([a-z0-9-]+(?:\.[a-z0-9-]+)*\.[a-z]{2,})/gi, function (domain) {
-      return '<a href="https://' + domain + '" target="_blank" rel="noopener">' + domain + '</a>';
-    });
+  function linkLabel(link) {
+    return link.label || link.url.replace(/^https?:\/\//, '');
   }
 
   function formatKm(n) {
@@ -152,11 +150,11 @@
     body.appendChild(el('h3', { class: 'stop-title' }, stop.title));
 
     if (stop.detail) {
-      body.appendChild(el('p', { class: 'stop-detail', html: linkifyDetail(stop.detail) }));
+      body.appendChild(el('p', { class: 'stop-detail' }, stop.detail));
     }
 
     if (stop.note && String(stop.note).trim()) {
-      body.appendChild(el('div', { class: 'stop-note', html: linkifyDetail(stop.note) }));
+      body.appendChild(el('div', { class: 'stop-note' }, stop.note));
     }
 
     const meta = el('div', { class: 'stop-meta' });
@@ -185,6 +183,18 @@
       });
       link.appendChild(document.createTextNode(' Maps'));
       meta.appendChild(link);
+      metaHasItems = true;
+    }
+    if (stop.link && stop.link.url) {
+      const a = el('a', {
+        class: 'maps-link',
+        href: stop.link.url,
+        target: '_blank',
+        rel: 'noopener',
+        html: ICONS.openIn
+      });
+      a.appendChild(document.createTextNode(' ' + linkLabel(stop.link)));
+      meta.appendChild(a);
       metaHasItems = true;
     }
     if (metaHasItems) body.appendChild(meta);
@@ -249,8 +259,19 @@
       li.appendChild(el('div', { class: 'campsite-night' }, 'N' + c.night));
       const right = el('div', {}, [
         el('p', { class: 'campsite-name' }, c.name),
-        el('p', { class: 'campsite-meta', html: linkifyDetail(c.price + ' · ' + c.booking) })
+        el('p', { class: 'campsite-meta' }, c.price + ' · ' + c.booking)
       ]);
+      if (c.link && c.link.url) {
+        const a = el('a', {
+          class: 'maps-link',
+          href: c.link.url,
+          target: '_blank',
+          rel: 'noopener',
+          html: ICONS.openIn
+        });
+        a.appendChild(document.createTextNode(' ' + linkLabel(c.link)));
+        right.appendChild(a);
+      }
       li.appendChild(right);
       ul.appendChild(li);
     });

@@ -13,7 +13,8 @@
       "night": 1,
       "name": "Reykjavík Eco-Campsite",
       "price": "~9.300 ISK (~€62)",
-      "booking": "PRENOTARE ONLINE · reykjavikcampsite.is",
+      "booking": "PRENOTARE ONLINE",
+      "link": { "url": "https://reykjavikcampsite.is", "label": "reykjavikcampsite.is" },
       "warning": true
     },
     {
@@ -41,14 +42,16 @@
       "night": 5,
       "name": "Camp Egilsstaðir",
       "price": "~5.500 ISK (~€37)",
-      "booking": "PRENOTARE ONLINE · campegilsstadir.is",
+      "booking": "PRENOTARE ONLINE",
+      "link": { "url": "https://campegilsstadir.is", "label": "campegilsstadir.is" },
       "warning": true
     },
     {
       "night": 6,
       "name": "Hamrar Campsite, Akureyri",
       "price": "~6.500 ISK (~€44)",
-      "booking": "Prenotabile · booking.hamrar.is",
+      "booking": "Prenotabile",
+      "link": { "url": "https://booking.hamrar.is", "label": "booking.hamrar.is" },
       "warning": false
     },
     {
@@ -89,7 +92,8 @@
           "type": "camp",
           "time": "19:30",
           "title": "Check-in Reykjavík Eco-Campsite",
-          "detail": "PRENOTARE ONLINE · reykjavikcampsite.is",
+          "detail": "PRENOTARE ONLINE",
+          "link": { "url": "https://reykjavikcampsite.is", "label": "reykjavikcampsite.is" },
           "warning": true,
           "mapsQuery": "Reykjavik Eco Campsite"
         },
@@ -528,7 +532,8 @@
           "type": "camp",
           "time": "18:00",
           "title": "Check-in Camp Egilsstaðir",
-          "detail": "PRENOTARE ONLINE · campegilsstadir.is",
+          "detail": "PRENOTARE ONLINE",
+          "link": { "url": "https://campegilsstadir.is", "label": "campegilsstadir.is" },
           "warning": true,
           "mapsQuery": "Camp Egilsstadir"
         }
@@ -663,7 +668,8 @@
           "type": "camp",
           "time": "20:00",
           "title": "Check-in Hamrar Campsite, Akureyri",
-          "detail": "Prenotabile · booking.hamrar.is",
+          "detail": "Prenotabile",
+          "link": { "url": "https://booking.hamrar.is", "label": "booking.hamrar.is" },
           "mapsQuery": "Hamrar Campsite Akureyri"
         }
       ]
@@ -681,7 +687,8 @@
           "type": "walk",
           "time": "08:00–10:30",
           "title": "Whale watching — fiordo di Eyjafjörður",
-          "detail": "Prenotare in anticipo · whalewatchingakureyri.is",
+          "detail": "Prenotare in anticipo",
+          "link": { "url": "https://whalewatchingakureyri.is", "label": "whalewatchingakureyri.is" },
           "warning": true,
           "duration": "2h 30min",
           "mapsQuery": "Akureyri whale watching",
