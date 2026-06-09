@@ -132,7 +132,8 @@
     const li = el('li', {
       class: 'stop stop--' + stop.type +
         (stop.warning ? ' stop--warning' : '') +
-        (stop.highlight ? ' stop--highlight' : '')
+        (stop.highlight ? ' stop--highlight' : '') +
+        (stop.optional ? ' stop--optional' : '')
     });
 
     const iconHtml = stop.warning ? ICONS.warning : iconFor(stop.type);
@@ -143,6 +144,9 @@
 
     if (stop.time) {
       body.appendChild(el('div', { class: 'stop-time' }, stop.time));
+    }
+    if (stop.optional) {
+      body.appendChild(el('span', { class: 'stop-badge' }, 'Opzionale'));
     }
 
     body.appendChild(el('h3', { class: 'stop-title' }, stop.title));
@@ -217,6 +221,10 @@
     }
 
     card.appendChild(head);
+
+    if (day.note && String(day.note).trim()) {
+      card.appendChild(el('div', { class: 'day-note', html: linkifyDetail(day.note) }));
+    }
 
     const ul = el('ul', { class: 'stops' });
     day.stops.forEach(s => ul.appendChild(renderStop(s)));

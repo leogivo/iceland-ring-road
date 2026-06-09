@@ -3,8 +3,8 @@
     "title": "Iceland Ring Road",
     "subtitle": "Furgone · 9 giorni",
     "dates": "13–21 Giugno 2026",
-    "totalKmWalk": 100,
-    "totalKmDrive": 2394,
+    "totalKmWalk": 106,
+    "totalKmDrive": 2271,
     "totalNights": 8,
     "mapUrl": "https://www.google.com/maps/dir/Keflavik+International+Airport/Reykjavik+Eco+Campsite/Gunnuhver+Iceland/Thingvellir+National+Park/Strokkur+Geyser/Gullfoss+Waterfall/Seljalandsfoss/Hvolsvollur+Campsite/Skogafoss+Iceland/Dyrh%C3%B3laey/Reynisfjara+Black+Sand+Beach/Vik+Camping/Skaftafell+Visitor+Centre/Jokulsarlon/Diamond+Beach/Hofn+Camping/Seydisfjordur/Studlagil+Canyon/Camp+Egilsstadir/Dettifoss+Iceland/Hverfjall+Crater/Godafoss/Hamrar+Campsite+Akureyri/Hellissandur+Camping/Djupalonsandur/Arnarstapi/Kirkjufell/Keflavik+International+Airport"
   },
@@ -116,51 +116,51 @@
       "date": "Dom 14 Giu",
       "title": "Reykjanes · Circolo d'Oro",
       "summary": {
-        "walk": "~9 km",
-        "drive": "~375 km · 5h 48min"
+        "walk": "~15 km",
+        "drive": "~252 km · 3h 53min"
       },
+      "note": "Gunnuhver opzionale: detour a Reykjanes (~1h30 extra) se c'è tempo prima di Thingvellir.",
       "stops": [
         {
           "type": "drive",
-          "time": "07:30–08:20",
-          "title": "Reykjavík → Reykjanes (Gunnuhver)",
-          "distance": "66 km",
-          "duration": "1h 4min",
-          "mapsQuery": "Gunnuhver Iceland",
-          "mapsDir": "https://www.google.com/maps/dir/Reykjavik+Iceland/Gunnuhver+Iceland"
-        },
-        {
-          "type": "walk",
-          "time": "08:20–09:30",
-          "title": "Gunnuhver + Faro Reykjanesviti + Bridge Between Continents",
-          "detail": "Siti raggiungibili a piedi l'uno dall'altro",
-          "distance": "~3 km",
-          "duration": "1h 10min",
-          "mapsQuery": "Bridge Between Continents Iceland",
-          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Gunnuhver+Iceland&destination=Bridge+Between+Continents+Iceland&travelmode=walking"
-        },
-        {
-          "type": "drive",
-          "time": "09:45–10:30",
-          "title": "Reykjanes → Thingvellir",
-          "distance": "104 km",
-          "duration": "1h 36min",
+          "time": "08:00–08:45",
+          "title": "Reykjavík → Thingvellir",
+          "distance": "49 km",
+          "duration": "45 min",
           "mapsQuery": "Thingvellir National Park",
-          "mapsDir": "https://www.google.com/maps/dir/Bridge+Between+Continents+Iceland/Thingvellir+National+Park"
+          "mapsDir": "https://www.google.com/maps/dir/Reykjavik+Iceland/Thingvellir+National+Park"
         },
         {
           "type": "walk",
-          "time": "10:30–12:00",
-          "title": "Almannagjá rift walk → Öxarárfoss",
-          "detail": "Frattura tettonica tra i due continenti",
-          "distance": "~3 km",
-          "duration": "1h 30min",
+          "time": "08:45–11:45",
+          "title": "⭐ Trek Thingvellir — Almannagjá + Öxarárfoss + sponde del lago",
+          "detail": "Anello ~10 km · faglia tettonica tra le placche · 3h",
+          "distance": "~10 km",
+          "duration": "3h",
+          "highlight": true,
           "mapsQuery": "Öxarárfoss",
           "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Thingvellir+National+Park&destination=Oxararfoss+Thingvellir&travelmode=walking"
         },
         {
           "type": "drive",
-          "time": "12:15–12:45",
+          "optional": true,
+          "title": "Opzionale · Reykjavík → Reykjanes (Gunnuhver)",
+          "distance": "66 km",
+          "mapsQuery": "Gunnuhver Iceland",
+          "mapsDir": "https://www.google.com/maps/dir/Reykjavik+Iceland/Gunnuhver+Iceland"
+        },
+        {
+          "type": "walk",
+          "optional": true,
+          "title": "Opzionale · Gunnuhver + Faro Reykjanesviti + Bridge Between Continents",
+          "detail": "Siti raggiungibili a piedi l'uno dall'altro · ~3 km",
+          "distance": "~3 km",
+          "mapsQuery": "Bridge Between Continents Iceland",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Gunnuhver+Iceland&destination=Bridge+Between+Continents+Iceland&travelmode=walking"
+        },
+        {
+          "type": "drive",
+          "time": "12:00–12:54",
           "title": "Thingvellir → Geysir",
           "distance": "56 km",
           "duration": "54 min",
@@ -169,7 +169,7 @@
         },
         {
           "type": "walk",
-          "time": "12:45–13:45",
+          "time": "13:00–14:00",
           "title": "Geysir Strokkur + pranzo",
           "detail": "Eruzione ogni ~10 min · area geotermale",
           "distance": "~1 km",
@@ -179,7 +179,7 @@
         },
         {
           "type": "drive",
-          "time": "13:45–14:00",
+          "time": "14:00–14:10",
           "title": "Geysir → Gullfoss",
           "distance": "10 km",
           "duration": "9 min",
@@ -188,7 +188,7 @@
         },
         {
           "type": "walk",
-          "time": "14:00–15:00",
+          "time": "14:10–15:10",
           "title": "Gullfoss — viewpoint superiore + inferiore",
           "detail": "Spray della cascata garantito",
           "distance": "~2 km",
@@ -198,7 +198,7 @@
         },
         {
           "type": "drive",
-          "time": "15:15–16:15",
+          "time": "15:25–17:10",
           "title": "Gullfoss → Seljalandsfoss",
           "distance": "117 km",
           "duration": "1h 45min",
@@ -207,7 +207,7 @@
         },
         {
           "type": "walk",
-          "time": "16:15–17:15",
+          "time": "17:10–18:10",
           "title": "Seljalandsfoss (dietro la cascata) + Gljúfrabúi",
           "detail": "Si bagna — portare impermeabile",
           "warning": true,
@@ -218,7 +218,7 @@
         },
         {
           "type": "drive",
-          "time": "17:30–18:00",
+          "time": "18:20–18:40",
           "title": "Seljalandsfoss → Hvolsvöllur",
           "distance": "22 km",
           "duration": "20 min",
@@ -227,7 +227,7 @@
         },
         {
           "type": "camp",
-          "time": "18:00",
+          "time": "18:40",
           "title": "Check-in Hvolsvöllur Campsite",
           "detail": "No prenotazione",
           "mapsQuery": "Hvolsvollur Campsite"
