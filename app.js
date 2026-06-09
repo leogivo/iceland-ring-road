@@ -155,6 +155,10 @@
       body.appendChild(el('p', { class: 'stop-detail', html: linkifyDetail(stop.detail) }));
     }
 
+    if (stop.note && String(stop.note).trim()) {
+      body.appendChild(el('div', { class: 'stop-note', html: linkifyDetail(stop.note) }));
+    }
+
     const meta = el('div', { class: 'stop-meta' });
     let metaHasItems = false;
 
@@ -221,10 +225,6 @@
     }
 
     card.appendChild(head);
-
-    if (day.note && String(day.note).trim()) {
-      card.appendChild(el('div', { class: 'day-note', html: linkifyDetail(day.note) }));
-    }
 
     const ul = el('ul', { class: 'stops' });
     day.stops.forEach(s => ul.appendChild(renderStop(s)));

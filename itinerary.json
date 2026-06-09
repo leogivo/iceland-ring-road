@@ -119,7 +119,6 @@
         "walk": "~15 km",
         "drive": "~252 km · 3h 53min"
       },
-      "note": "Gunnuhver opzionale: detour a Reykjanes (~1h30 extra) se c'è tempo prima di Thingvellir.",
       "stops": [
         {
           "type": "drive",
@@ -135,6 +134,7 @@
           "time": "08:45–11:45",
           "title": "⭐ Trek Thingvellir — Almannagjá + Öxarárfoss + sponde del lago",
           "detail": "Anello ~10 km · faglia tettonica tra le placche · 3h",
+          "note": "Gunnuhver opzionale: detour a Reykjanes (~1h30 extra) se c'è tempo.",
           "distance": "~10 km",
           "duration": "3h",
           "highlight": true,
