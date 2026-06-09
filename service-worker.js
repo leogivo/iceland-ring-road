@@ -1,9 +1,10 @@
 /* ============================================================
    Iceland Ring Road — Service Worker
-   Cache-first per i file dell'app, network-first per itinerary.json
+   Network-first per tutto (sempre aggiornato quando online),
+   la cache serve solo come fallback offline.
    ============================================================ */
 
-const VERSION = 'iceland-v4';
+const VERSION = 'iceland-v5';
 const STATIC_CACHE = 'iceland-static-' + VERSION;
 const DATA_CACHE = 'iceland-data-' + VERSION;
 
@@ -56,27 +57,9 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Cache-first for everything else
-  event.respondWith(cacheFirst(req, STATIC_CACHE));
+  // Network-first for everything else too (always fresh when online)
+  event.respondWith(networkFirst(req, STATIC_CACHE));
 });
-
-async function cacheFirst(req, cacheName) {
-  const cache = await caches.open(cacheName);
-  const cached = await cache.match(req, { ignoreSearch: true });
-  if (cached) return cached;
-  try {
-    const res = await fetch(req);
-    if (res && res.ok) cache.put(req, res.clone());
-    return res;
-  } catch (err) {
-    // Final fallback: return index.html for navigation requests
-    if (req.mode === 'navigate') {
-      const fallback = await cache.match('index.html');
-      if (fallback) return fallback;
-    }
-    throw err;
-  }
-}
 
 async function networkFirst(req, cacheName) {
   const cache = await caches.open(cacheName);
@@ -87,6 +70,11 @@ async function networkFirst(req, cacheName) {
   } catch (err) {
     const cached = await cache.match(req, { ignoreSearch: true });
     if (cached) return cached;
+    // Final fallback: return index.html for navigation requests
+    if (req.mode === 'navigate') {
+      const fallback = await cache.match('index.html');
+      if (fallback) return fallback;
+    }
     throw err;
   }
 }
