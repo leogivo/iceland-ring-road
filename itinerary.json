@@ -14,7 +14,10 @@
       "name": "Reykjavík Eco-Campsite",
       "price": "~9.300 ISK (~€62)",
       "booking": "PRENOTARE ONLINE",
-      "link": { "url": "https://reykjavikcampsite.is", "label": "reykjavikcampsite.is" },
+      "link": {
+        "url": "https://reykjavikcampsite.is",
+        "label": "reykjavikcampsite.is"
+      },
       "warning": true
     },
     {
@@ -43,7 +46,10 @@
       "name": "Camp Egilsstaðir",
       "price": "~5.500 ISK (~€37)",
       "booking": "PRENOTARE ONLINE",
-      "link": { "url": "https://campegilsstadir.is", "label": "campegilsstadir.is" },
+      "link": {
+        "url": "https://campegilsstadir.is",
+        "label": "campegilsstadir.is"
+      },
       "warning": true
     },
     {
@@ -51,7 +57,10 @@
       "name": "Hamrar Campsite, Akureyri",
       "price": "~6.500 ISK (~€44)",
       "booking": "Prenotabile",
-      "link": { "url": "https://booking.hamrar.is", "label": "booking.hamrar.is" },
+      "link": {
+        "url": "https://booking.hamrar.is",
+        "label": "booking.hamrar.is"
+      },
       "warning": false
     },
     {
@@ -93,7 +102,10 @@
           "time": "19:30",
           "title": "Check-in Reykjavík Eco-Campsite",
           "detail": "PRENOTARE ONLINE",
-          "link": { "url": "https://reykjavikcampsite.is", "label": "reykjavikcampsite.is" },
+          "link": {
+            "url": "https://reykjavikcampsite.is",
+            "label": "reykjavikcampsite.is"
+          },
           "warning": true,
           "mapsQuery": "Reykjavik Eco Campsite"
         },
@@ -123,7 +135,10 @@
         "walk": "~15 km",
         "drive": "~252 km · 3h 53min"
       },
-      "link": { "url": "https://www.thingvellir.is", "label": "thingvellir.is" },
+      "link": {
+        "url": "https://www.thingvellir.is",
+        "label": "thingvellir.is"
+      },
       "stops": [
         {
           "type": "drive",
@@ -137,19 +152,21 @@
         {
           "type": "walk",
           "time": "08:45–11:45",
-          "title": "⭐ Trek Thingvellir — Almannagjá + Öxarárfoss + sponde del lago",
-          "detail": "Anello ~10 km · faglia tettonica tra le placche · 3h",
-          "note": "Gunnuhver opzionale: detour a Reykjanes (~1h30 extra) se c'è tempo.",
-          "distance": "~10 km",
-          "duration": "3h",
+          "title": "Trek Thingvellir — Almannagjá + Öxarárfoss + sponde del lago",
+          "detail": "Anello · faglia tettonica tra le placche · 3h",
+          "distance": "7,9 km",
+          "duration": "2,5–3h",
           "highlight": true,
-          "mapsQuery": "Öxarárfoss",
-          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Thingvellir+National+Park&destination=Oxararfoss+Thingvellir&travelmode=walking"
+          "link": {
+            "url": "https://www.komoot.com/it-it/smarttour/702056?ref=wdd&t_s=referral&t_cid=route_share",
+            "label": "Komoot - Thingvellir to Oxararfoss"
+          }
         },
         {
           "type": "drive",
           "optional": true,
           "title": "Opzionale · Reykjavík → Reykjanes (Gunnuhver)",
+          "note": "Gunnuhver opzionale: non e' molto vicino a Thingvellir. Ci sono le Hot Spring li, magari si riesce il giorno 1 (~1h30 extra) se c'è tempo.",
           "distance": "66 km",
           "mapsQuery": "Gunnuhver Iceland",
           "mapsDir": "https://www.google.com/maps/dir/Reykjavik+Iceland/Gunnuhver+Iceland"
@@ -260,7 +277,7 @@
         {
           "type": "walk",
           "time": "07:30–12:30",
-          "title": "⭐ Waterfall Way da Skógafoss",
+          "title": "Waterfall Way da Skógafoss",
           "detail": "16 km A/R · 26 cascate · accorciabile a piacere",
           "distance": "~16 km",
           "duration": "5h",
@@ -351,7 +368,7 @@
         {
           "type": "walk",
           "time": "08:15–11:00",
-          "title": "⭐ Svartifoss + Sjónarnípa loop",
+          "title": "Svartifoss + Sjónarnípa loop",
           "detail": "Mattina presto: pochi turisti · colonne basaltiche nere",
           "distance": "7.4 km",
           "duration": "2h 45min",
@@ -512,7 +529,7 @@
         {
           "type": "walk",
           "time": "14:15–17:15",
-          "title": "⭐ Stuðlagil Canyon",
+          "title": "Stuðlagil Canyon",
           "detail": "9 km A/R · colonne basaltiche + fiume glaciale turchese · sponda est",
           "distance": "~9 km",
           "duration": "3h",
@@ -534,7 +551,10 @@
           "time": "18:00",
           "title": "Check-in Camp Egilsstaðir",
           "detail": "PRENOTARE ONLINE",
-          "link": { "url": "https://campegilsstadir.is", "label": "campegilsstadir.is" },
+          "link": {
+            "url": "https://campegilsstadir.is",
+            "label": "campegilsstadir.is"
+          },
           "warning": true,
           "mapsQuery": "Camp Egilsstadir"
         }
@@ -601,7 +621,7 @@
         {
           "type": "walk",
           "time": "11:40–13:30",
-          "title": "⭐ Hverfjall — salita + giro del cratere",
+          "title": "Hverfjall — salita + giro del cratere",
           "detail": "20 min salita · ~1h rim walk · vista 360° su Mývatn",
           "distance": "~4-5 km",
           "duration": "1h 50min",
@@ -670,7 +690,10 @@
           "time": "20:00",
           "title": "Check-in Hamrar Campsite, Akureyri",
           "detail": "Prenotabile",
-          "link": { "url": "https://booking.hamrar.is", "label": "booking.hamrar.is" },
+          "link": {
+            "url": "https://booking.hamrar.is",
+            "label": "booking.hamrar.is"
+          },
           "mapsQuery": "Hamrar Campsite Akureyri"
         }
       ]
@@ -689,7 +712,10 @@
           "time": "08:00–10:30",
           "title": "Whale watching — fiordo di Eyjafjörður",
           "detail": "Prenotare in anticipo",
-          "link": { "url": "https://whalewatchingakureyri.is", "label": "whalewatchingakureyri.is" },
+          "link": {
+            "url": "https://whalewatchingakureyri.is",
+            "label": "whalewatchingakureyri.is"
+          },
           "warning": true,
           "duration": "2h 30min",
           "mapsQuery": "Akureyri whale watching",
@@ -780,7 +806,7 @@
         {
           "type": "walk",
           "time": "10:20–12:10",
-          "title": "⭐ Arnarstapi → Hellnar coastal trail (A/R)",
+          "title": "Arnarstapi → Hellnar coastal trail (A/R)",
           "detail": "Scogliere basaltiche · arco Gatklettur · vista sul ghiacciaio",
           "distance": "5 km",
           "duration": "1h 50min",
@@ -800,7 +826,7 @@
         {
           "type": "walk",
           "time": "13:55–15:45",
-          "title": "⭐ Kirkjufell + Kirkjufellsfoss loop",
+          "title": "Kirkjufell + Kirkjufellsfoss loop",
           "detail": "La montagna più fotografata d'Islanda · Game of Thrones",
           "distance": "~4 km",
           "duration": "1h 50min",

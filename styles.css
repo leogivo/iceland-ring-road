@@ -368,16 +368,6 @@ main {
   color: var(--highlight);
 }
 
-.stop--walk.stop--highlight::after {
-  content: "⭐";
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 16px;
-  line-height: 1;
-  pointer-events: none;
-}
-
 .stop--midnight .stop-icon {
   border-color: var(--accent);
   background: var(--accent-soft);
@@ -678,6 +668,48 @@ main {
   stroke-linecap: round;
   stroke-linejoin: round;
   flex-shrink: 0;
+}
+
+/* ============================================================
+   Pull-to-refresh indicator
+   ============================================================ */
+
+.ptr-indicator {
+  position: fixed;
+  top: -48px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-faint);
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+.ptr-indicator .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.ptr-indicator--visible { opacity: 1; }
+
+.ptr-indicator--ready { color: var(--accent); }
+
+.ptr-indicator--spinning .icon {
+  animation: ptr-spin 0.8s linear infinite;
+}
+
+@keyframes ptr-spin {
+  to { transform: rotate(360deg); }
 }
 
 /* ============================================================

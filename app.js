@@ -29,7 +29,9 @@
     // Steering wheel / route
     route: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h8a4 4 0 0 1 0 8H8a4 4 0 0 0 0 8h11"/></svg>',
     // Tent (campsites)
-    tent: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 3 20h18z"/><path d="M12 4v16"/><path d="M10 20l2-4 2 4"/></svg>'
+    tent: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 3 20h18z"/><path d="M12 4v16"/><path d="M10 20l2-4 2 4"/></svg>',
+    // Refresh (pull-to-refresh)
+    refresh: '<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4v4h-4"/></svg>'
   };
 
   function iconFor(type) {
@@ -230,7 +232,7 @@
     if (day.summary && (day.summary.walk || day.summary.drive)) {
       const summary = el('div', { class: 'day-summary' });
       if (day.summary.walk) {
-        const item = el('span', { class: 'day-summary-item', html: ICONS.boot });
+        const item = el('span', { class: 'day-summary-item', html: ICONS.walk });
         item.appendChild(document.createTextNode(' ' + day.summary.walk));
         summary.appendChild(item);
       }
@@ -337,16 +339,91 @@
     update();
   }
 
+  /* ---------- Pull-to-refresh ---------- */
+
+  // Wipe every cache, update the SW, then reload — guarantees fresh content.
+  async function hardRefresh() {
+    try {
+      if (window.caches) {
+        const keys = await caches.keys();
+        await Promise.all(keys.map(k => caches.delete(k)));
+      }
+      if ('serviceWorker' in navigator) {
+        const regs = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(regs.map(r => r.update()));
+      }
+    } catch (err) {
+      console.warn('Cache refresh failed:', err);
+    }
+    location.reload();
+  }
+
+  function setupPullToRefresh() {
+    const THRESHOLD = 80; // px of pull needed to trigger
+    const indicator = el('div', {
+      class: 'ptr-indicator',
+      'aria-hidden': 'true',
+      html: ICONS.refresh
+    });
+    document.body.appendChild(indicator);
+
+    let startY = 0;
+    let pulling = false;
+    let refreshing = false;
+
+    window.addEventListener('touchstart', (e) => {
+      if (refreshing || window.scrollY > 0) return;
+      startY = e.touches[0].clientY;
+      pulling = true;
+    }, { passive: true });
+
+    window.addEventListener('touchmove', (e) => {
+      if (!pulling || refreshing) return;
+      const delta = e.touches[0].clientY - startY;
+      if (delta <= 0) {
+        indicator.classList.remove('ptr-indicator--visible', 'ptr-indicator--ready');
+        indicator.style.transform = '';
+        return;
+      }
+      const pull = Math.min(delta, THRESHOLD * 1.5);
+      indicator.classList.add('ptr-indicator--visible');
+      indicator.classList.toggle('ptr-indicator--ready', delta >= THRESHOLD);
+      indicator.style.transform = 'translateX(-50%) translateY(' + (pull * 0.6) + 'px)';
+    }, { passive: true });
+
+    window.addEventListener('touchend', () => {
+      if (!pulling || refreshing) return;
+      pulling = false;
+      if (indicator.classList.contains('ptr-indicator--ready')) {
+        refreshing = true;
+        indicator.classList.add('ptr-indicator--spinning');
+        hardRefresh();
+      } else {
+        indicator.classList.remove('ptr-indicator--visible');
+        indicator.style.transform = '';
+      }
+    });
+  }
+
   /* ---------- Service worker ---------- */
 
   function registerServiceWorker() {
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('service-worker.js').catch(err => {
-          console.warn('SW registration failed:', err);
-        });
-      });
+    if (!('serviceWorker' in navigator)) return;
+
+    // On localhost (dev) never cache: kill any existing SW so reloads are
+    // always fresh. The PWA/offline cache is only for the deployed site.
+    const isLocal = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
+    if (isLocal) {
+      navigator.serviceWorker.getRegistrations().then(rs => rs.forEach(r => r.unregister()));
+      if (window.caches) caches.keys().then(ks => ks.forEach(k => caches.delete(k)));
+      return;
     }
+
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js').catch(err => {
+        console.warn('SW registration failed:', err);
+      });
+    });
   }
 
   /* ---------- Boot ---------- */
@@ -373,6 +450,7 @@
       renderCampsites(data.campsites);
       setupDayObserver(data.days);
       setupOfflineToast();
+      setupPullToRefresh();
     } catch (err) {
       console.error(err);
       showError('Impossibile caricare i dati dell\'itinerario.');

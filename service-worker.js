@@ -4,7 +4,7 @@
    la cache serve solo come fallback offline.
    ============================================================ */
 
-const VERSION = 'iceland-v9';
+const VERSION = 'iceland-v10';
 const STATIC_CACHE = 'iceland-static-' + VERSION;
 const DATA_CACHE = 'iceland-data-' + VERSION;
 
