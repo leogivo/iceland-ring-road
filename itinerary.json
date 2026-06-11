@@ -259,10 +259,10 @@
     {
       "id": 3,
       "date": "Lun 15 Giu",
-      "title": "Waterfall Way · Costa Sud · Vík",
+      "title": "Waterfall Way · Costa Sud · Vík · Fjaðrárgljúfur",
       "summary": {
-        "walk": "~22 km",
-        "drive": "~109 km · 1h 52min"
+        "walk": "~24 km",
+        "drive": "~247 km · 3h 50min"
       },
       "stops": [
         {
@@ -338,7 +338,37 @@
           "time": "16:30",
           "title": "Check-in Vík Camping",
           "detail": "No prenotazione · vista sui faraglioni",
+          "optional": true,
           "mapsQuery": "Vik Camping"
+        },
+        {
+          "type": "drive",
+          "time": "16:45–17:45",
+          "title": "Vík → Fjaðrárgljúfur",
+          "distance": "69 km",
+          "duration": "59 min",
+          "mapsQuery": "Fjadrargljufur Canyon",
+          "mapsDir": "https://www.google.com/maps/dir/Vik+Iceland/Fjadrargljufur+Canyon"
+        },
+        {
+          "type": "walk",
+          "time": "17:45–18:30",
+          "title": "Fjaðrárgljúfur — canyon",
+          "detail": "Sentiero sul bordo · viewpoint a 100 m di profondità",
+          "distance": "~2 km",
+          "duration": "45 min",
+          "highlight": true,
+          "mapsQuery": "Fjadrargljufur Canyon",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Fjadrargljufur+parking&destination=Fjadrargljufur+upper+viewpoint&travelmode=walking"
+        },
+        {
+          "type": "drive",
+          "time": "18:30–19:30",
+          "title": "Fjaðrárgljúfur → Vík",
+          "distance": "69 km",
+          "duration": "59 min",
+          "mapsQuery": "Vik Camping",
+          "mapsDir": "https://www.google.com/maps/dir/Fjadrargljufur+Canyon/Vik+Iceland"
         },
         {
           "type": "midnight",
