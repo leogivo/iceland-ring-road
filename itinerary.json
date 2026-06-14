@@ -3,8 +3,8 @@
     "title": "Iceland Ring Road",
     "subtitle": "Furgone · 9 giorni",
     "dates": "13–21 Giugno 2026",
-    "totalKmWalk": 106,
-    "totalKmDrive": 2271,
+    "totalKmWalk": 113,
+    "totalKmDrive": 2136,
     "totalNights": 8,
     "mapUrl": "https://www.google.com/maps/dir/Keflavik+International+Airport/Reykjavik+Eco+Campsite/Gunnuhver+Iceland/Thingvellir+National+Park/Strokkur+Geyser/Gullfoss+Waterfall/Seljalandsfoss/Hvolsvollur+Campsite/Skogafoss+Iceland/Dyrh%C3%B3laey/Reynisfjara+Black+Sand+Beach/Vik+Camping/Skaftafell+Visitor+Centre/Jokulsarlon/Diamond+Beach/Hofn+Camping/Seydisfjordur/Studlagil+Canyon/Camp+Egilsstadir/Dettifoss+Iceland/Hverfjall+Crater/Godafoss/Hamrar+Campsite+Akureyri/Hellissandur+Camping/Djupalonsandur/Arnarstapi/Kirkjufell/Keflavik+International+Airport"
   },
@@ -29,7 +29,7 @@
     },
     {
       "night": 3,
-      "name": "Vík Camping",
+      "name": "Kirkjubæjarklaustur Camping",
       "price": "~5.500 ISK (~€37)",
       "booking": "No prenotazione",
       "warning": false
@@ -132,8 +132,8 @@
       "date": "Dom 14 Giu",
       "title": "Reykjanes · Circolo d'Oro",
       "summary": {
-        "walk": "~15 km",
-        "drive": "~252 km · 3h 53min"
+        "walk": "~20 km",
+        "drive": "~246 km · 3h 43min"
       },
       "link": {
         "url": "https://www.thingvellir.is",
@@ -142,7 +142,7 @@
       "stops": [
         {
           "type": "drive",
-          "time": "08:00–08:45",
+          "time": "10:00–10:45",
           "title": "Reykjavík → Thingvellir",
           "distance": "49 km",
           "duration": "45 min",
@@ -151,16 +151,23 @@
         },
         {
           "type": "walk",
-          "time": "08:45–11:45",
+          "time": "10:50–14:13",
           "title": "Trek Thingvellir — Almannagjá + Öxarárfoss + sponde del lago",
-          "detail": "Anello · faglia tettonica tra le placche · 3h",
-          "distance": "7,9 km",
+          "detail": "Anello · faglia tettonica tra le placche · 3h20",
+          "distance": "10 km",
           "duration": "2,5–3h",
           "highlight": true,
           "link": {
             "url": "https://www.komoot.com/it-it/smarttour/702056?ref=wdd&t_s=referral&t_cid=route_share",
             "label": "Komoot - Thingvellir to Oxararfoss"
           }
+        },
+        {
+          "type": "walk",
+          "time": "14:13–15:05",
+          "title": "Pranzo a Thingvellir",
+          "detail": "Pausa pranzo prima di ripartire",
+          "mapsQuery": "Thingvellir National Park"
         },
         {
           "type": "drive",
@@ -182,7 +189,7 @@
         },
         {
           "type": "drive",
-          "time": "12:00–12:54",
+          "time": "15:06–16:00",
           "title": "Thingvellir → Geysir",
           "distance": "56 km",
           "duration": "54 min",
@@ -191,8 +198,8 @@
         },
         {
           "type": "walk",
-          "time": "13:00–14:00",
-          "title": "Geysir Strokkur + pranzo",
+          "time": "16:00–16:45",
+          "title": "Geysir Strokkur",
           "detail": "Eruzione ogni ~10 min · area geotermale",
           "distance": "~1 km",
           "duration": "1h",
@@ -201,7 +208,7 @@
         },
         {
           "type": "drive",
-          "time": "14:00–14:10",
+          "time": "16:45–16:54",
           "title": "Geysir → Gullfoss",
           "distance": "10 km",
           "duration": "9 min",
@@ -210,7 +217,7 @@
         },
         {
           "type": "walk",
-          "time": "14:10–15:10",
+          "time": "16:54–17:54",
           "title": "Gullfoss — viewpoint superiore + inferiore",
           "detail": "Spray della cascata garantito",
           "distance": "~2 km",
@@ -220,36 +227,36 @@
         },
         {
           "type": "drive",
-          "time": "15:25–17:10",
-          "title": "Gullfoss → Seljalandsfoss",
-          "distance": "117 km",
-          "duration": "1h 45min",
-          "mapsQuery": "Seljalandsfoss",
-          "mapsDir": "https://www.google.com/maps/dir/Gullfoss+Waterfall+Iceland/Seljalandsfoss+Iceland"
+          "time": "18:05–19:10",
+          "title": "Gullfoss → Reykjadalur (Hveragerði)",
+          "distance": "73 km",
+          "duration": "1h 5min",
+          "mapsQuery": "Reykjadalur Hot Spring Thermal River parking",
+          "mapsDir": "https://www.google.com/maps/dir/Gullfoss+Waterfall+Iceland/Reykjadalur+Hot+Spring+Thermal+River"
         },
         {
           "type": "walk",
-          "time": "17:10–18:10",
-          "title": "Seljalandsfoss (dietro la cascata) + Gljúfrabúi",
-          "detail": "Si bagna — portare impermeabile",
-          "warning": true,
-          "distance": "~2 km",
-          "duration": "1h",
-          "mapsQuery": "Seljalandsfoss",
-          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Seljalandsfoss+Iceland&destination=Gljufrabui+Iceland&travelmode=walking"
+          "time": "19:10–21:40",
+          "title": "Reykjadalur — fiume termale + bagno",
+          "detail": "~7 km A/R · risalita alla valle · bagno nel fiume caldo · portare costume",
+          "distance": "~7 km",
+          "duration": "2h 30min",
+          "highlight": true,
+          "mapsQuery": "Reykjadalur Hot Spring Thermal River",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Reykjadalur+Hot+Spring+Thermal+River+parking&destination=Reykjadalur+Hot+Spring+Thermal+River&travelmode=walking"
         },
         {
           "type": "drive",
-          "time": "18:20–18:40",
-          "title": "Seljalandsfoss → Hvolsvöllur",
-          "distance": "22 km",
-          "duration": "20 min",
+          "time": "21:50–22:40",
+          "title": "Reykjadalur → Hvolsvöllur",
+          "distance": "58 km",
+          "duration": "50 min",
           "mapsQuery": "Hvolsvollur Campsite",
-          "mapsDir": "https://www.google.com/maps/dir/Seljalandsfoss+Iceland/Hvolsvollur+Iceland"
+          "mapsDir": "https://www.google.com/maps/dir/Reykjadalur+Hot+Spring+Thermal+River/Hvolsvollur+Iceland"
         },
         {
           "type": "camp",
-          "time": "18:40",
+          "time": "22:40",
           "title": "Check-in Hvolsvöllur Campsite",
           "detail": "No prenotazione",
           "mapsQuery": "Hvolsvollur Campsite"
@@ -261,22 +268,42 @@
       "date": "Lun 15 Giu",
       "title": "Waterfall Way · Costa Sud · Vík · Fjaðrárgljúfur",
       "summary": {
-        "walk": "~24 km",
-        "drive": "~247 km · 3h 50min"
+        "walk": "~26 km",
+        "drive": "~188 km · 3h 8min"
       },
       "stops": [
         {
           "type": "drive",
-          "time": "07:00–07:30",
-          "title": "Hvolsvöllur → Skógafoss",
-          "distance": "50 km",
-          "duration": "45 min",
-          "mapsQuery": "Skogafoss",
-          "mapsDir": "https://www.google.com/maps/dir/Hvolsvollur+Iceland/Skogafoss+Iceland"
+          "time": "07:00–07:20",
+          "title": "Hvolsvöllur → Seljalandsfoss",
+          "distance": "22 km",
+          "duration": "20 min",
+          "mapsQuery": "Seljalandsfoss",
+          "mapsDir": "https://www.google.com/maps/dir/Hvolsvollur+Iceland/Seljalandsfoss+Iceland"
         },
         {
           "type": "walk",
-          "time": "07:30–12:30",
+          "time": "07:20–08:20",
+          "title": "Seljalandsfoss (dietro la cascata) + Gljúfrabúi",
+          "detail": "Si bagna — portare impermeabile",
+          "warning": true,
+          "distance": "~2 km",
+          "duration": "1h",
+          "mapsQuery": "Seljalandsfoss",
+          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Seljalandsfoss+Iceland&destination=Gljufrabui+Iceland&travelmode=walking"
+        },
+        {
+          "type": "drive",
+          "time": "08:30–09:00",
+          "title": "Seljalandsfoss → Skógafoss",
+          "distance": "28 km",
+          "duration": "30 min",
+          "mapsQuery": "Skogafoss",
+          "mapsDir": "https://www.google.com/maps/dir/Seljalandsfoss+Iceland/Skogafoss+Iceland"
+        },
+        {
+          "type": "walk",
+          "time": "09:00–14:00",
           "title": "Waterfall Way da Skógafoss",
           "detail": "16 km A/R · 26 cascate · accorciabile a piacere",
           "distance": "~16 km",
@@ -287,7 +314,7 @@
         },
         {
           "type": "drive",
-          "time": "12:45–13:10",
+          "time": "14:15–14:46",
           "title": "Skógafoss → Dyrhólaey",
           "distance": "28 km",
           "duration": "31 min",
@@ -296,7 +323,7 @@
         },
         {
           "type": "walk",
-          "time": "13:10–14:10",
+          "time": "14:46–15:46",
           "title": "Dyrhólaey — promontorio + puffin",
           "detail": "Vista a 360° sull'Atlantico",
           "distance": "~2 km",
@@ -306,7 +333,7 @@
         },
         {
           "type": "drive",
-          "time": "14:10–14:30",
+          "time": "15:50–16:14",
           "title": "Dyrhólaey → Reynisfjara",
           "distance": "20 km",
           "duration": "24 min",
@@ -315,7 +342,7 @@
         },
         {
           "type": "walk",
-          "time": "14:30–15:30",
+          "time": "16:14–17:14",
           "title": "Reynisfjara — spiaggia nera + colonne basaltiche",
           "warning": true,
           "distance": "~2 km",
@@ -325,24 +352,16 @@
         },
         {
           "type": "drive",
-          "time": "15:45–16:30",
-          "title": "Reynisfjara → pranzo Vík → Vík Camping",
+          "time": "17:20–17:32",
+          "title": "Reynisfjara → Vík (pranzo/sosta)",
           "distance": "11 km",
           "duration": "12 min",
-          "mapsQuery": "Vik Camping",
-          "mapsDir": "https://www.google.com/maps/dir/Reynisfjara+Black+Sand+Beach/Vik+Camping+Iceland"
-        },
-        {
-          "type": "camp",
-          "time": "16:30",
-          "title": "Check-in Vík Camping",
-          "detail": "No prenotazione · vista sui faraglioni",
-          "optional": true,
-          "mapsQuery": "Vik Camping"
+          "mapsQuery": "Vik i Myrdal",
+          "mapsDir": "https://www.google.com/maps/dir/Reynisfjara+Black+Sand+Beach/Vik+Iceland"
         },
         {
           "type": "drive",
-          "time": "16:45–17:45",
+          "time": "17:40–18:39",
           "title": "Vík → Fjaðrárgljúfur",
           "distance": "69 km",
           "duration": "59 min",
@@ -351,7 +370,7 @@
         },
         {
           "type": "walk",
-          "time": "17:45–18:30",
+          "time": "18:39–19:24",
           "title": "Fjaðrárgljúfur — canyon",
           "detail": "Sentiero sul bordo · viewpoint a 100 m di profondità",
           "distance": "~2 km",
@@ -362,17 +381,24 @@
         },
         {
           "type": "drive",
-          "time": "18:30–19:30",
-          "title": "Fjaðrárgljúfur → Vík",
-          "distance": "69 km",
-          "duration": "59 min",
-          "mapsQuery": "Vik Camping",
-          "mapsDir": "https://www.google.com/maps/dir/Fjadrargljufur+Canyon/Vik+Iceland"
+          "time": "19:30–19:42",
+          "title": "Fjaðrárgljúfur → Kirkjubæjarklaustur",
+          "distance": "10 km",
+          "duration": "12 min",
+          "mapsQuery": "Kirkjubaer II Camping Kirkjubaejarklaustur",
+          "mapsDir": "https://www.google.com/maps/dir/Fjadrargljufur+Canyon/Kirkjubaejarklaustur+Iceland"
+        },
+        {
+          "type": "camp",
+          "time": "19:42",
+          "title": "Check-in Kirkjubæjarklaustur Camping",
+          "detail": "No prenotazione",
+          "mapsQuery": "Kirkjubaer II Camping Kirkjubaejarklaustur"
         },
         {
           "type": "midnight",
           "time": "23:30+",
-          "title": "Midnight sun sulla spiaggia nera di Vík"
+          "title": "Midnight sun a Kirkjubæjarklaustur"
         }
       ]
     },
@@ -382,21 +408,21 @@
       "title": "Skaftafell · Lagune Glaciali · Höfn",
       "summary": {
         "walk": "~12 km",
-        "drive": "~304 km · 5h 4min"
+        "drive": "~234 km · 3h 55min"
       },
       "stops": [
         {
           "type": "drive",
-          "time": "07:00–08:15",
-          "title": "Vík → Skaftafell",
-          "distance": "140 km",
-          "duration": "1h 59min",
+          "time": "07:00–07:50",
+          "title": "Kirkjubæjarklaustur → Skaftafell",
+          "distance": "70 km",
+          "duration": "50 min",
           "mapsQuery": "Skaftafell Visitor Centre",
-          "mapsDir": "https://www.google.com/maps/dir/Vik+Iceland/Skaftafell+Visitor+Centre"
+          "mapsDir": "https://www.google.com/maps/dir/Kirkjubaejarklaustur+Iceland/Skaftafell+Visitor+Centre"
         },
         {
           "type": "walk",
-          "time": "08:15–11:00",
+          "time": "08:00–10:45",
           "title": "Svartifoss + Sjónarnípa loop",
           "detail": "Mattina presto: pochi turisti · colonne basaltiche nere",
           "distance": "7.4 km",
@@ -407,7 +433,7 @@
         },
         {
           "type": "drive",
-          "time": "11:30–12:30",
+          "time": "11:00–11:50",
           "title": "Skaftafell → Jökulsárlón",
           "distance": "57 km",
           "duration": "50 min",
@@ -416,7 +442,7 @@
         },
         {
           "type": "walk",
-          "time": "12:30–13:30",
+          "time": "11:50–12:50",
           "title": "Jökulsárlón — laguna glaciale",
           "detail": "Iceberg galleggianti · foche",
           "distance": "~2-3 km",
@@ -426,7 +452,7 @@
         },
         {
           "type": "drive",
-          "time": "13:30–13:35",
+          "time": "12:50–12:54",
           "title": "Jökulsárlón → Diamond Beach",
           "detail": "Dall'altra parte della strada",
           "distance": "1 km",
@@ -436,7 +462,7 @@
         },
         {
           "type": "walk",
-          "time": "13:35–14:30",
+          "time": "12:54–13:50",
           "title": "Diamond Beach — ghiaccio sulla sabbia nera",
           "detail": "Pranzo al food truck",
           "distance": "~2 km",
@@ -446,7 +472,7 @@
         },
         {
           "type": "drive",
-          "time": "14:30–14:45",
+          "time": "14:00–14:32",
           "title": "Diamond Beach → Fjallsárlón",
           "distance": "13 km",
           "duration": "32 min",
@@ -455,7 +481,7 @@
         },
         {
           "type": "walk",
-          "time": "14:45–15:30",
+          "time": "14:32–15:17",
           "title": "Fjallsárlón — lago glaciale secondario",
           "detail": "Più tranquillo di Jökulsárlón",
           "distance": "~1.5 km",
@@ -465,7 +491,7 @@
         },
         {
           "type": "drive",
-          "time": "15:45–17:30",
+          "time": "15:30–17:09",
           "title": "Fjallsárlón → Höfn",
           "distance": "93 km",
           "duration": "1h 39min",
@@ -474,7 +500,7 @@
         },
         {
           "type": "camp",
-          "time": "17:30",
+          "time": "17:10",
           "title": "Check-in Höfn Campsite",
           "detail": "No prenotazione · cena con gamberi",
           "mapsQuery": "Hofn Camping"
