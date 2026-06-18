@@ -3,8 +3,8 @@
     "title": "Iceland Ring Road",
     "subtitle": "Furgone · 9 giorni",
     "dates": "13–21 Giugno 2026",
-    "totalKmWalk": 113,
-    "totalKmDrive": 2136,
+    "totalKmWalk": 111,
+    "totalKmDrive": 2110,
     "totalNights": 8,
     "mapUrl": "https://www.google.com/maps/dir/Keflavik+International+Airport/Reykjavik+Eco+Campsite/Gunnuhver+Iceland/Thingvellir+National+Park/Strokkur+Geyser/Gullfoss+Waterfall/Seljalandsfoss/Hvolsvollur+Campsite/Skogafoss+Iceland/Dyrh%C3%B3laey/Reynisfjara+Black+Sand+Beach/Vik+Camping/Skaftafell+Visitor+Centre/Jokulsarlon/Diamond+Beach/Hofn+Camping/Seydisfjordur/Studlagil+Canyon/Camp+Egilsstadir/Dettifoss+Iceland/Hverfjall+Crater/Godafoss/Hamrar+Campsite+Akureyri/Hellissandur+Camping/Djupalonsandur/Arnarstapi/Kirkjufell/Keflavik+International+Airport"
   },
@@ -168,24 +168,6 @@
           "title": "Pranzo a Thingvellir",
           "detail": "Pausa pranzo prima di ripartire",
           "mapsQuery": "Thingvellir National Park"
-        },
-        {
-          "type": "drive",
-          "optional": true,
-          "title": "Opzionale · Reykjavík → Reykjanes (Gunnuhver)",
-          "note": "Gunnuhver opzionale: non e' molto vicino a Thingvellir. Ci sono le Hot Spring li, magari si riesce il giorno 1 (~1h30 extra) se c'è tempo.",
-          "distance": "66 km",
-          "mapsQuery": "Gunnuhver Iceland",
-          "mapsDir": "https://www.google.com/maps/dir/Reykjavik+Iceland/Gunnuhver+Iceland"
-        },
-        {
-          "type": "walk",
-          "optional": true,
-          "title": "Opzionale · Gunnuhver + Faro Reykjanesviti + Bridge Between Continents",
-          "detail": "Siti raggiungibili a piedi l'uno dall'altro · ~3 km",
-          "distance": "~3 km",
-          "mapsQuery": "Bridge Between Continents Iceland",
-          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Gunnuhver+Iceland&destination=Bridge+Between+Continents+Iceland&travelmode=walking"
         },
         {
           "type": "drive",
@@ -407,8 +389,8 @@
       "date": "Mar 16 Giu",
       "title": "Skaftafell · Lagune Glaciali · Höfn",
       "summary": {
-        "walk": "~12 km",
-        "drive": "~234 km · 3h 55min"
+        "walk": "~10 km",
+        "drive": "~208 km · 2h 50min"
       },
       "stops": [
         {
@@ -472,35 +454,16 @@
         },
         {
           "type": "drive",
-          "time": "14:00–14:32",
-          "title": "Diamond Beach → Fjallsárlón",
-          "distance": "13 km",
-          "duration": "32 min",
-          "mapsQuery": "Fjallsarlon",
-          "mapsDir": "https://www.google.com/maps/dir/Diamond+Beach+Iceland/Fjallsarlon+Iceland"
-        },
-        {
-          "type": "walk",
-          "time": "14:32–15:17",
-          "title": "Fjallsárlón — lago glaciale secondario",
-          "detail": "Più tranquillo di Jökulsárlón",
-          "distance": "~1.5 km",
-          "duration": "45 min",
-          "mapsQuery": "Fjallsarlon",
-          "mapsDir": "https://www.google.com/maps/dir/?api=1&origin=Fjallsarlon+parking+Iceland&destination=Fjallsarlon+Iceland&travelmode=walking"
-        },
-        {
-          "type": "drive",
-          "time": "15:30–17:09",
-          "title": "Fjallsárlón → Höfn",
-          "distance": "93 km",
-          "duration": "1h 39min",
+          "time": "14:00–15:06",
+          "title": "Diamond Beach → Höfn",
+          "distance": "80 km",
+          "duration": "1h 6min",
           "mapsQuery": "Hofn Camping",
-          "mapsDir": "https://www.google.com/maps/dir/Fjallsarlon+Iceland/Hofn+Iceland"
+          "mapsDir": "https://www.google.com/maps/dir/Diamond+Beach+Iceland/Hofn+Iceland"
         },
         {
           "type": "camp",
-          "time": "17:10",
+          "time": "15:06",
           "title": "Check-in Höfn Campsite",
           "detail": "No prenotazione · cena con gamberi",
           "mapsQuery": "Hofn Camping"
